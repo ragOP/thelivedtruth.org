@@ -168,56 +168,20 @@ body {
   margin-top: 4px;
 }
 
-/* ─── IMAGE PLACEHOLDER ─── */
+/* ─── ARTICLE IMAGES ─── */
 .img-block {
+  margin: 28px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  background: #f7f7f7;
+}
+.img-block img {
   width: 100%;
   aspect-ratio: 1280 / 720;
-  background: #f5f5f5;
-  border: 2px dashed #bbb;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin: 28px 0;
-  position: relative;
-  overflow: hidden;
-}
-.img-block-num {
-  position: absolute;
-  top: 12px;
-  left: 14px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #fff;
-  background: #333;
-  padding: 3px 10px;
-  border-radius: 3px;
-}
-.img-block-icon {
-  font-size: 36px;
-  opacity: 0.25;
-}
-.img-block-label {
-  font-size: 13px;
-  font-weight: 600;
-  color: #555;
-  text-align: center;
-  max-width: 85%;
-  line-height: 1.5;
-  background: rgba(255,255,255,0.85);
-  padding: 8px 16px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-}
-.img-block-dim {
-  font-size: 10px;
-  color: #aaa;
-  font-weight: 500;
-  letter-spacing: 0.06em;
+  display: block;
+  height: auto;
+  object-fit: cover;
 }
 
 /* ─── BODY CONTENT ─── */
@@ -565,30 +529,8 @@ body {
 
     <!-- IMAGE 01 — HERO -->
     <div class="img-block" id="img-01">
-      <div class="img-block-num">IMAGE 01 — HERO (place directly below headline)</div>
-      <div class="img-block-icon">🖼</div>
-      <div class="img-block-label">
-        Woman awake in bed at night — exhausted, defeated, staring at ceiling
-      </div>
-      <div class="img-block-dim">1280 × 720px · YouTube thumbnail ratio</div>
+      <img src="snorestop-image-01-hero.png" alt="Woman lying awake in bed at night looking exhausted while her husband sleeps in the background." loading="eager" decoding="async">
     </div>
-    <!--
-    ══════════════════════════════════════════════════════════════
-    NANO BANANA PRO PROMPT — IMAGE 01 (HERO):
-
-    Photorealistic cinematic photograph of a woman in her early 40s lying awake in a dark bedroom at 2am,
-    eyes wide open staring at the ceiling with a hollow, resigned expression — not dramatic, just quietly
-    defeated. She is on her side of the bed with the sheets slightly tangled. Her husband is visible just
-    out of focus in the background, asleep on his back, completely oblivious. The room is dark with only
-    faint ambient streetlight filtering through curtains casting a cool blue-grey light across her face.
-    Her expression is the specific exhaustion of someone who has been through this hundreds of times —
-    not angry, not crying, just worn down and awake again. Wedding ring visible on her hand which rests
-    flat on her chest. The composition should feel intimate and voyeuristic, like you accidentally walked
-    into someone's private suffering. Shot wide angle from foot of bed. Mood is heavy, still, lonely.
-    Color palette: dark navy shadows, cool blue-grey highlights, warm skin tones. Cinematic depth of field,
-    35mm film texture, ISO grain, emotionally raw. No artificial lighting, no posed quality. Real.
-    ══════════════════════════════════════════════════════════════
-    -->
 
 
     <h2>It Started Small. The Way These Things Always Do.</h2>
@@ -602,30 +544,8 @@ body {
 
     <!-- IMAGE 02 -->
     <div class="img-block" id="img-02">
-      <div class="img-block-num">IMAGE 02 — FAILED SOLUTIONS (after "It Started Small" section)</div>
-      <div class="img-block-icon">🖼</div>
-      <div class="img-block-label">
-        Nightstand with pile of failed snoring solutions — earplugs, nose strips, mouthguard
-      </div>
-      <div class="img-block-dim">1280 × 720px · YouTube thumbnail ratio</div>
+      <img src="snorestop-image-02-failed-solutions.png" alt="Bedside nightstand with earplugs, nose strips, and a mouthguard showing multiple failed snoring solutions." loading="lazy" decoding="async">
     </div>
-    <!--
-    ══════════════════════════════════════════════════════════════
-    NANO BANANA PRO PROMPT — IMAGE 02 (FAILED SOLUTIONS):
-
-    Photorealistic close-up overhead shot of a woman's bedside nightstand at night, shot from above at
-    a slight angle. On the nightstand: a half-opened pack of bright orange foam earplugs with a few
-    loose ones scattered, a partially used box of Breathe Right nasal strips with one crumpled used strip
-    nearby, a bulky plastic anti-snore mouthguard still in its case but obviously rarely used, a phone
-    face-down, and a glass of water with condensation. The nightstand has the look of someone who has
-    tried everything — cluttered with quiet desperation. Dim warm lamp light from off-frame left,
-    casting soft shadows across the objects. Wood grain nightstand surface, slightly dusty. The scene
-    tells a story of repeated failed attempts without a single person in frame. Shot at f/2.8 for shallow
-    depth of field with mouthguard as hero object. Mood: tired resignation, domestic realism. Color palette:
-    warm amber shadows, cool blue phone screen glow, natural wood tones. Hyper-realistic, 50mm lens, no
-    styling, authentically messy the way a real bedroom nightstand looks at 2am.
-    ══════════════════════════════════════════════════════════════
-    -->
 
 
     <h2>I Tried Everything. I Mean Everything.</h2>
@@ -653,31 +573,8 @@ body {
 
     <!-- IMAGE 03 -->
     <div class="img-block" id="img-03">
-      <div class="img-block-num">IMAGE 03 — EXHAUSTION (after "Never Said Out Loud" section)</div>
-      <div class="img-block-icon">🖼</div>
-      <div class="img-block-label">
-        Exhausted woman alone at kitchen table, hands around coffee mug, blank stare — morning after
-      </div>
-      <div class="img-block-dim">1280 × 720px · YouTube thumbnail ratio</div>
+      <img src="snorestop-image-03-exhaustion.png" alt="Exhausted woman sitting alone in a kitchen with a coffee mug the morning after another sleepless night." loading="lazy" decoding="async">
     </div>
-    <!--
-    ══════════════════════════════════════════════════════════════
-    NANO BANANA PRO PROMPT — IMAGE 03 (EXHAUSTION / EMOTIONAL TOLL):
-
-    Photorealistic candid-style photograph of a woman in her early-to-mid 40s sitting alone at a kitchen
-    table in the early morning, both hands wrapped tightly around a large ceramic coffee mug, staring
-    straight ahead at nothing — a completely blank, hollow expression on her face. She is still in pajamas
-    or an oversized t-shirt. Her hair is loose and slightly messy from sleep. Natural morning light streams
-    through a window from the left side, casting long soft shadows across the table. The kitchen is clean
-    but the scene feels heavy and still — no one else present, no sounds, just her and the coffee. She
-    looks profoundly tired in a way that sleep deprivation does to someone after months of it — not
-    crying, not visibly upset, just completely depleted. There are faint dark circles under her eyes.
-    The composition is mid-shot from across the table, eye level. She doesn't know she's being
-    photographed. Mood is quiet, lonely, honest. Color palette: warm morning golden light, cool shadows,
-    muted kitchen tones of white and grey. 35mm photorealistic, shallow depth of field with her face
-    sharp and background slightly soft. Documentary photography feel, no staging, no glamour.
-    ══════════════════════════════════════════════════════════════
-    -->
 
 
     <h2>I Tried To Talk To Him About It. More Than Once.</h2>
@@ -703,32 +600,8 @@ body {
 
     <!-- IMAGE 04 -->
     <div class="img-block" id="img-04">
-      <div class="img-block-num">IMAGE 04 — DISCOVERY MOMENT (after "What I Found" section)</div>
-      <div class="img-block-icon">🖼</div>
-      <div class="img-block-label">
-        Woman in dark bedroom, phone screen glow on face, expression shifting to quiet hope — midnight discovery
-      </div>
-      <div class="img-block-dim">1280 × 720px · YouTube thumbnail ratio</div>
+      <img src="snorestop-image-04-discovery.png" alt="Woman in a dark bedroom lit by phone glow, discovering a possible solution with cautious hope." loading="lazy" decoding="async">
     </div>
-    <!--
-    ══════════════════════════════════════════════════════════════
-    NANO BANANA PRO PROMPT — IMAGE 04 (DISCOVERY MOMENT):
-
-    Photorealistic intimate photograph of a woman in her early 40s lying on her side in a completely dark
-    bedroom, propped slightly on one elbow, holding her smartphone in front of her face. The only light
-    source is the blue-white glow of the phone screen illuminating her face from below — casting sharp
-    shadows across her cheekbones and forehead. Her expression is caught mid-change: she started the
-    night exhausted and scrolling numbly but something she just read has shifted her — there is a flicker
-    of quiet, cautious hope in her eyes, the kind that has been burned before so it doesn't let itself
-    fully arrive yet. Her husband is barely visible as a dark shape in the background, deeply asleep.
-    The room is pitch black except for the phone light. Shot from slightly above her head looking down
-    toward her face at close range, intimate. The phone screen is bright enough to see she's scrolling
-    a product or article page but the specific content is not readable. Hyper-realistic, cinematic,
-    shot at f/1.8 for razor-thin depth of field with only her eyes and phone in focus. Mood is hushed,
-    intimate, the specific feeling of being the only person awake in the world at midnight. Color palette:
-    cold blue-white phone light on warm skin, absolute darkness everywhere else.
-    ══════════════════════════════════════════════════════════════
-    -->
 
 
     <h2>Why It Actually Works — And Why I Wish I'd Known Sooner.</h2>
@@ -740,32 +613,8 @@ body {
 
     <!-- IMAGE 05 — PRODUCT SHOT -->
     <div class="img-block" id="img-05">
-      <div class="img-block-num">IMAGE 05 — PRODUCT SHOT (attach SnoreStop product image in Nano Banana Pro)</div>
-      <div class="img-block-icon">🖼</div>
-      <div class="img-block-label">
-        SnoreStop bottle on nightstand — naturally placed, warm bedroom light, real bedtime routine feel
-      </div>
-      <div class="img-block-dim">1280 × 720px · YouTube thumbnail ratio</div>
+      <img src="snorestop-image-05-product.png" alt="SnoreStop throat spray bottle on a bedside nightstand in warm bedroom light." loading="lazy" decoding="async">
     </div>
-    <!--
-    ══════════════════════════════════════════════════════════════
-    NANO BANANA PRO PROMPT — IMAGE 05 (PRODUCT ON NIGHTSTAND):
-    ⚠️ ATTACH SNORESTOP PRODUCT IMAGE BEFORE GENERATING
-
-    Photorealistic lifestyle product photograph of the SnoreStop throat spray bottle sitting on a natural
-    wood bedside nightstand in a warmly lit bedroom at nighttime. The bottle is the clear hero of the
-    frame — centered, well-lit by a warm bedside lamp from the right side creating a soft golden glow
-    that wraps around the bottle. Around it on the nightstand: a simple glass of water with slight
-    condensation, a phone placed face-down, a folded paperback book with a bookmark. Nothing else.
-    The background is a softly out-of-focus bedroom — white or linen bedding, warm shadows, window
-    with curtains. The product is NOT being held, NOT being modeled — it is simply sitting there as
-    part of an authentic bedtime routine, the way something that works gets quietly integrated into
-    your life. Shot at f/2.2, 85mm lens equivalent, product sharp and background beautifully blurred.
-    Warm amber-gold color palette, high-end lifestyle photography quality but not clinical or commercial
-    — it should feel like a real person's nightstand, not a studio setup. No text overlays, no badges,
-    no hands in frame. The bottle label should be clearly readable and facing the camera directly.
-    ══════════════════════════════════════════════════════════════
-    -->
 
 
     <!-- PRICE COMPARISON -->
@@ -799,32 +648,8 @@ body {
 
     <!-- IMAGE 06 -->
     <div class="img-block" id="img-06">
-      <div class="img-block-num">IMAGE 06 — TRANSFORMATION / PAYOFF (after "Three Months Later" section)</div>
-      <div class="img-block-icon">🖼</div>
-      <div class="img-block-label">
-        Couple in morning kitchen — she looks genuinely rested, he's handing her coffee, both relaxed and present
-      </div>
-      <div class="img-block-dim">1280 × 720px · YouTube thumbnail ratio</div>
+      <img src="snorestop-image-06-payoff.png" alt="Rested couple in a bright morning kitchen sharing coffee and looking relaxed." loading="lazy" decoding="async">
     </div>
-    <!--
-    ══════════════════════════════════════════════════════════════
-    NANO BANANA PRO PROMPT — IMAGE 06 (TRANSFORMATION / PAYOFF):
-
-    Photorealistic candid-style photograph of a couple in their early-to-mid 40s in a bright weekend
-    morning kitchen. The woman is sitting at a kitchen island or counter, visibly rested — her eyes are
-    clear and bright, her posture relaxed, there is a natural easy smile on her face that reaches her
-    eyes. Her husband stands beside her handing her a coffee mug, their fingers touching briefly on the
-    handle — a small, unremarkable gesture of intimacy that speaks to a relationship that is easy and
-    well-rested. He looks at her with a natural warm expression. Neither of them is posing. The kitchen
-    has warm morning sunlight flooding in from a large window behind them, creating a golden backlit glow.
-    Coffee maker visible on counter. Casually dressed — weekend pajamas or soft morning clothes. The
-    scene radiates the specific feeling of a morning that is unhurried and replenished — the opposite
-    of exhaustion. This is the payoff image, the "after" — it should feel unmistakably like relief and
-    normalcy restored. Shot from across the kitchen, natural depth of field, candid framing. Documentary
-    style, not an ad. Warm golden color palette, natural morning light as the only source. Photorealistic,
-    cinematic, emotionally warm without being saccharine.
-    ══════════════════════════════════════════════════════════════
-    -->
 
 
     <h2>The Part That Made Me Finally Pull The Trigger.</h2>
