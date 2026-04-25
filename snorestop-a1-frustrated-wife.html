@@ -6,677 +6,374 @@
 <title>My Husband's Snoring Got So Bad I Had To Do Something. Here's What Actually Worked. | The Lived Truth</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 17px;
-  line-height: 1.75;
-  color: #1a1a1a;
-  background: #ffffff;
-  -webkit-font-smoothing: antialiased;
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:17px;line-height:1.78;color:#1a1a1a;background:#fff;-webkit-font-smoothing:antialiased}
+.site-header{background:#fff;border-bottom:2px solid #1a1a1a;padding:14px 20px;text-align:center}
+.site-header-inner{display:flex;align-items:center;justify-content:space-between;max-width:680px;margin:0 auto}
+.site-logo{font-size:21px;font-weight:700;color:#1a1a1a;letter-spacing:-0.02em}
+.adv-label{font-size:11px;font-weight:600;color:#888;text-transform:uppercase;letter-spacing:.12em;border:1px solid #ddd;padding:3px 10px;border-radius:3px}
+.page-wrap{max-width:680px;margin:0 auto;padding:0 20px 120px}
+.article-head{padding:32px 0 0}
+.article-category{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#3b82f6;margin-bottom:14px}
+.article-headline{font-size:30px;font-weight:700;line-height:1.25;color:#111;letter-spacing:-0.02em;margin-bottom:20px}
+.article-headline .bracket{color:#3b82f6;font-weight:600}
+.author-row{display:flex;align-items:center;gap:12px;padding-bottom:24px;border-bottom:1px solid #e5e5e5}
+.author-avatar{width:42px;height:42px;border-radius:50%;background:#e8f0fe;border:2px solid #c5d8fc;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;color:#3b5bdb;flex-shrink:0}
+.author-meta{line-height:1.35}
+.author-name{font-size:14px;font-weight:600;color:#111}
+.author-sub{font-size:12px;color:#888}
+.verified-tag{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:#2e7d32;font-weight:600;background:#f0faf0;border:1px solid #c8e6c9;padding:2px 8px;border-radius:20px;margin-top:3px}
+.img-block{margin:28px 0;border-radius:8px;overflow:hidden;border:1px solid #e5e5e5;background:#f7f7f7}
+.img-block img{width:100%;aspect-ratio:1280/720;display:block;height:auto;object-fit:cover}
+.article-body{padding-top:28px}
+.article-body p{margin-bottom:20px;color:#1a1a1a;font-size:17px;line-height:1.78}
+.article-body p strong{font-weight:700;color:#111}
+.article-body p em{font-style:italic;color:#333}
+.article-body h2{font-size:22px;font-weight:700;color:#111;margin:40px 0 16px;line-height:1.3;letter-spacing:-0.01em}
+.hl{background:#fff176;padding:0 2px;border-radius:2px}
+.pull-quote{border-left:4px solid #3b82f6;background:#f8fbff;padding:18px 22px;margin:28px 0;border-radius:0 4px 4px 0}
+.pull-quote p{font-size:19px!important;font-style:italic;font-weight:500;color:#1a3a6e!important;margin:0!important;line-height:1.55!important}
+.price-box{background:#f9f9f9;border:1px solid #e0e0e0;border-radius:6px;padding:24px 26px;margin:28px 0}
+.price-box-title{font-size:15px;font-weight:700;color:#111;margin-bottom:16px}
+.price-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #e8e8e8;font-size:15px}
+.price-row:last-child{border-bottom:none}
+.price-row .label{color:#444}
+.price-row .amount{font-weight:700;color:#222}
+.price-row.winner{background:#f0faf0;margin:4px -26px -24px;padding:14px 26px;border-radius:0 0 6px 6px;border-top:2px solid #2e7d32;border-bottom:none}
+.price-row.winner .label{color:#1b5e20;font-weight:700;font-size:15px}
+.price-row.winner .amount{color:#1b5e20;font-size:20px}
+.guarantee-box{background:#f0faf0;border:2px solid #4caf50;border-radius:8px;padding:26px 28px;margin:28px 0;text-align:center}
+.guarantee-icon{font-size:38px;margin-bottom:10px}
+.guarantee-box h3{font-size:20px;font-weight:700;color:#1b5e20;margin-bottom:12px;line-height:1.3}
+.guarantee-box p{font-size:16px;color:#2e4a2e;line-height:1.72;margin-bottom:12px;text-align:left}
+.guarantee-box p:last-child{margin-bottom:0}
+.guarantee-statement{background:#fff;border:1px solid #a5d6a7;border-radius:6px;padding:14px 18px;margin:16px 0;font-size:18px;font-weight:700;color:#1b5e20;line-height:1.4}
+.cta-wrap{text-align:center;margin:32px 0}
+.cta-btn{display:block;width:100%;background:#2563eb;color:#fff;font-size:17px;font-weight:700;text-align:center;text-decoration:none;padding:19px 28px;border-radius:6px;border:none;cursor:pointer;transition:background .2s,transform .1s;letter-spacing:.01em;line-height:1.3}
+.cta-btn:hover{background:#1d4ed8}
+.cta-btn:active{transform:scale(.99)}
+.cta-subtext{font-size:12px;color:#888;margin-top:10px;line-height:1.65;text-align:center}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;padding:12px 20px 16px;background:rgba(255,255,255,.97);border-top:1px solid #e0e0e0;z-index:9999;transform:translateY(110%);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:0 -4px 24px rgba(0,0,0,.09)}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-cta .cta-btn{max-width:680px;margin:0 auto;display:block;font-size:16px;padding:16px 28px}
+.comments-section{border-top:2px solid #e5e5e5;margin-top:52px;padding-top:30px}
+.comments-title{font-size:18px;font-weight:700;color:#111;margin-bottom:24px}
+.comment{display:flex;gap:12px;margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid #f0f0f0}
+.comment:last-child{border-bottom:none;margin-bottom:0}
+.comment.reply{margin-left:44px}
+.c-avatar{width:36px;height:36px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.comment-inner{flex:1}
+.comment-name{font-size:14px;font-weight:700;color:#111;margin-bottom:4px}
+.comment-text{font-size:14px;color:#333;line-height:1.65;margin-bottom:6px}
+.comment-meta{display:flex;align-items:center;gap:14px}
+.c-action{font-size:12px;color:#888;font-weight:600;cursor:pointer}
+.c-likes{font-size:12px;color:#aaa}
+.c-time{font-size:12px;color:#bbb}
+.page-footer{border-top:1px solid #e5e5e5;margin-top:48px;padding:28px 0 40px;text-align:center}
+.footer-disclaimer{font-size:11px;color:#aaa;line-height:1.75;max-width:600px;margin:0 auto 18px}
+.footer-links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:14px}
+.footer-links a{font-size:12px;color:#999;text-decoration:none}
+.footer-links a:hover{color:#333;text-decoration:underline}
+.footer-copy{font-size:11px;color:#ccc}
+@media(max-width:520px){
+  .article-headline{font-size:24px}
+  body{font-size:16px}
+  .article-body p{font-size:16px}
+  .page-wrap{padding:0 16px 120px}
+  .price-box{padding:18px 16px}
+  .price-row.winner{margin:4px -16px -18px;padding:14px 16px}
+  .guarantee-box{padding:20px 16px}
+  .article-head{padding:24px 0 0}
 }
-
-/* ─── TOP HEADER ─── */
-.site-header {
-  background: #fff;
-  border-bottom: 1px solid #e5e5e5;
-  padding: 14px 20px;
-  text-align: center;
-}
-.site-header-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 680px;
-  margin: 0 auto 8px;
-}
-.site-logo {
-  font-size: 20px;
-  font-weight: 700;
-  color: #1a1a1a;
-  letter-spacing: -0.02em;
-}
-.adv-label {
-  font-size: 11px;
-  font-weight: 600;
-  color: #888;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  border: 1px solid #ddd;
-  padding: 3px 10px;
-  border-radius: 3px;
-}
-.trending-bar {
-  background: #f0f7ff;
-  border: 1px solid #c8dff8;
-  border-radius: 4px;
-  padding: 8px 14px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  font-weight: 500;
-  color: #1a5fb4;
-  max-width: 680px;
-  width: 100%;
-}
-.trending-dot {
-  width: 8px;
-  height: 8px;
-  background: #e74c3c;
-  border-radius: 50%;
-  flex-shrink: 0;
-  animation: pulse 1.5s infinite;
-}
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
-}
-
-/* ─── MAIN WRAPPER ─── */
-.page-wrap {
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 0 20px 100px;
-}
-
-/* ─── HEADLINE SECTION ─── */
-.article-head {
-  padding: 32px 0 24px;
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 28px;
-}
-.article-category {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #3b82f6;
-  margin-bottom: 12px;
-}
-.article-headline {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.25;
-  color: #111;
-  letter-spacing: -0.02em;
-  margin-bottom: 8px;
-}
-.article-headline .bracket {
-  color: #3b82f6;
-  font-weight: 600;
-}
-.stars-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 16px 0;
-}
-.stars {
-  color: #f59e0b;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-.stars-count {
-  font-size: 13px;
-  color: #555;
-  font-weight: 500;
-}
-.author-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 16px;
-}
-.author-avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: #e8f0fe;
-  border: 2px solid #c5d8fc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 16px;
-  color: #3b5bdb;
-  flex-shrink: 0;
-}
-.author-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-}
-.author-meta { line-height: 1.35; }
-.author-name {
-  font-size: 14px;
-  font-weight: 600;
-  color: #111;
-}
-.author-date {
-  font-size: 12px;
-  color: #888;
-}
-.verified-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 11px;
-  color: #2e7d32;
-  font-weight: 600;
-  background: #f0faf0;
-  border: 1px solid #c8e6c9;
-  padding: 2px 8px;
-  border-radius: 20px;
-  margin-top: 4px;
-}
-
-/* ─── ARTICLE IMAGES ─── */
-.img-block {
-  margin: 28px 0;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid #e5e5e5;
-  background: #f7f7f7;
-}
-.img-block img {
-  width: 100%;
-  aspect-ratio: 1280 / 720;
-  display: block;
-  height: auto;
-  object-fit: cover;
-}
-
-/* ─── BODY CONTENT ─── */
-.article-body p {
-  margin-bottom: 20px;
-  color: #1a1a1a;
-  font-size: 17px;
-  line-height: 1.78;
-}
-.article-body p strong {
-  font-weight: 700;
-  color: #111;
-}
-.article-body p em {
-  font-style: italic;
-  color: #333;
-}
-.article-body h2 {
-  font-size: 22px;
-  font-weight: 700;
-  color: #111;
-  margin: 38px 0 16px;
-  line-height: 1.3;
-  letter-spacing: -0.01em;
-}
-.article-body ul {
-  margin: 0 0 20px 0;
-  padding: 0;
-  list-style: none;
-}
-.article-body ul li {
-  padding: 6px 0 6px 24px;
-  position: relative;
-  font-size: 17px;
-  color: #1a1a1a;
-  line-height: 1.6;
-  border-bottom: 1px solid #f0f0f0;
-}
-.article-body ul li:last-child { border-bottom: none; }
-.article-body ul li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: #3b82f6;
-  font-weight: 700;
-}
-
-/* ─── PULL QUOTE ─── */
-.pull-quote {
-  border-left: 4px solid #3b82f6;
-  background: #f8fbff;
-  padding: 18px 22px;
-  margin: 28px 0;
-  border-radius: 0 4px 4px 0;
-}
-.pull-quote p {
-  font-size: 19px !important;
-  font-style: italic;
-  font-weight: 500;
-  color: #1a3a6e !important;
-  margin: 0 !important;
-  line-height: 1.55 !important;
-}
-
-/* ─── PRICE COMPARISON BOX ─── */
-.price-box {
-  background: #f9f9f9;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  padding: 24px 26px;
-  margin: 28px 0;
-}
-.price-box-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 16px;
-}
-.price-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #e8e8e8;
-  font-size: 15px;
-}
-.price-row:last-child { border-bottom: none; }
-.price-row .label { color: #444; }
-.price-row .amount { font-weight: 700; color: #222; }
-.price-row.winner { background: #f0faf0; margin: 4px -26px -24px; padding: 14px 26px; border-radius: 0 0 6px 6px; border-top: 2px solid #2e7d32; }
-.price-row.winner .label { color: #1b5e20; font-weight: 700; font-size: 16px; }
-.price-row.winner .amount { color: #1b5e20; font-size: 20px; }
-
-/* ─── GUARANTEE BOX ─── */
-.guarantee-box {
-  background: #f0faf0;
-  border: 2px solid #4caf50;
-  border-radius: 8px;
-  padding: 26px 28px;
-  margin: 28px 0;
-  text-align: center;
-}
-.guarantee-icon { font-size: 40px; margin-bottom: 10px; }
-.guarantee-box h3 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #1b5e20;
-  margin-bottom: 12px;
-  line-height: 1.3;
-}
-.guarantee-box p {
-  font-size: 16px;
-  color: #2e4a2e;
-  line-height: 1.7;
-  margin-bottom: 12px;
-}
-.guarantee-box p:last-child { margin-bottom: 0; }
-.guarantee-statement {
-  background: white;
-  border: 1px solid #a5d6a7;
-  border-radius: 6px;
-  padding: 14px 18px;
-  margin: 16px 0;
-  font-size: 18px;
-  font-weight: 700;
-  color: #1b5e20;
-  line-height: 1.4;
-}
-
-/* ─── CTA BUTTON ─── */
-.cta-wrap {
-  text-align: center;
-  margin: 32px 0;
-}
-.cta-btn {
-  display: block;
-  width: 100%;
-  background: #2563eb;
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  padding: 19px 28px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
-  letter-spacing: 0.01em;
-  line-height: 1.3;
-}
-.cta-btn:hover { background: #1d4ed8; }
-.cta-btn:active { transform: scale(0.99); }
-.cta-subtext {
-  font-size: 12px;
-  color: #888;
-  margin-top: 10px;
-  line-height: 1.6;
-  text-align: center;
-}
-
-/* ─── STICKY BUTTON (button only, no bar) ─── */
-.sticky-cta {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 12px 20px;
-  background: rgba(255,255,255,0.97);
-  border-top: 1px solid #e5e5e5;
-  z-index: 9999;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.10);
-}
-.sticky-cta.show { transform: translateY(0); }
-.sticky-cta .cta-btn {
-  max-width: 680px;
-  margin: 0 auto;
-  display: block;
-  font-size: 16px;
-  padding: 16px 28px;
-}
-
-/* ─── COMMENTS ─── */
-.comments-section {
-  border-top: 2px solid #e5e5e5;
-  margin-top: 52px;
-  padding-top: 30px;
-}
-.comments-title {
-  font-size: 18px;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 24px;
-}
-.comment {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 22px;
-  padding-bottom: 22px;
-  border-bottom: 1px solid #f0f0f0;
-}
-.comment:last-child { border-bottom: none; margin-bottom: 0; }
-.comment.reply { margin-left: 44px; }
-.comment-avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: #e8e8e8;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 14px;
-  color: #555;
-}
-.comment-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-}
-.comment-inner { flex: 1; }
-.comment-name {
-  font-size: 14px;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 3px;
-}
-.comment-text {
-  font-size: 14px;
-  color: #333;
-  line-height: 1.65;
-  margin-bottom: 6px;
-}
-.comment-meta {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-.comment-action {
-  font-size: 12px;
-  color: #888;
-  font-weight: 600;
-  cursor: pointer;
-}
-.comment-likes {
-  font-size: 12px;
-  color: #888;
-}
-.comment-time {
-  font-size: 12px;
-  color: #aaa;
-}
-
-/* ─── FOOTER ─── */
-.page-footer {
-  border-top: 1px solid #e5e5e5;
-  margin-top: 48px;
-  padding: 28px 0 40px;
-  text-align: center;
-}
-.footer-disclaimer {
-  font-size: 11px;
-  color: #999;
-  line-height: 1.75;
-  max-width: 600px;
-  margin: 0 auto 18px;
-}
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  flex-wrap: wrap;
-  margin-bottom: 14px;
-}
-.footer-links a {
-  font-size: 12px;
-  color: #888;
-  text-decoration: none;
-}
-.footer-links a:hover { color: #333; text-decoration: underline; }
-.footer-copy {
-  font-size: 11px;
-  color: #bbb;
-}
-
-/* ─── RESPONSIVE ─── */
-@media (max-width: 520px) {
-  .article-headline { font-size: 24px; }
-  body { font-size: 16px; }
-  .article-body p { font-size: 16px; }
-  .page-wrap { padding: 0 16px 100px; }
-  .price-box { padding: 18px 16px; }
-  .price-row.winner { margin: 4px -16px -18px; padding: 14px 16px; }
-  .guarantee-box { padding: 20px 16px; }
-}
-
 </style>
 </head>
 <body>
 
-<!-- ══ HEADER ══ -->
 <header class="site-header">
-  <div class="site-header-top">
+  <div class="site-header-inner">
     <div class="site-logo">The Lived Truth</div>
     <div class="adv-label">Advertorial</div>
   </div>
-  <div class="trending-bar">
-    <div class="trending-dot"></div>
-    <strong>Trending in the US</strong> — Thousands of women reading this right now
-  </div>
 </header>
 
-
-<!-- ══ ARTICLE ══ -->
 <main class="page-wrap">
 
-  <!-- HEADLINE -->
   <div class="article-head">
-    <div class="article-category">Personal Essay · Sleep &amp; Relationships</div>
+    <div class="article-category">Personal Essay &middot; Sleep &amp; Relationships</div>
     <h1 class="article-headline">
       My Husband's Snoring Got So Bad I Had To Do Something. Here's What Actually Worked.
       <span class="bracket"> (Do It Today)</span>
     </h1>
-    <div class="stars-row">
-      <span class="stars">★★★★★</span>
-      <span class="stars-count">4.8/5 · 250,000+ people helped</span>
-    </div>
     <div class="author-row">
-      <div class="author-avatar"><img src="sarah.png" alt="Sarah M. profile photo" loading="eager" decoding="async"></div>
+      <div class="author-avatar">S</div>
       <div class="author-meta">
-        <div class="author-name">Sarah M. — Contributing Writer</div>
-        <div class="author-date">April 24, 2026 · 6 min read</div>
-        <div class="verified-tag">✓ Verified Story</div>
+        <div class="author-name">Sarah M. &mdash; Contributing Writer</div>
+        <div class="author-sub">April 24, 2026 &middot; 6 min read &middot; 250,000+ people helped</div>
+        <div class="verified-tag">&#10003; Verified Story</div>
       </div>
     </div>
   </div>
 
+  <!-- IMAGE 01 — HERO — directly below headline -->
+  <div class="img-block" id="img-01">
+    <img src="snorestop-image-01-hero.png" alt="Woman lying awake in bed at night looking exhausted while her husband sleeps in the background." loading="eager" decoding="async">
+  </div>
+  <!--
+  ====================================================================
+  NANO BANANA PRO PROMPT — IMAGE 01 (HERO):
+
+  Shot on iPhone 15 Pro, photorealistic, looks exactly like a real photo taken with iPhone 15 Pro
+  Night Mode in a completely dark bedroom — natural grain, authentic muted colors, slight
+  underexposure, zero studio lighting or professional photography feel. A woman in her early 40s
+  lying awake on her side of a dark bedroom at 2am, eyes wide open staring at the ceiling with a
+  hollow resigned expression, not dramatic, just quietly defeated, the specific exhaustion of
+  someone who has been through this hundreds of times. She is on her side of the bed with sheets
+  slightly tangled. Her husband is visible just out of focus in the background, asleep flat on his
+  back, mouth slightly open, completely oblivious. Room is dark with only faint ambient streetlight
+  filtering through curtains casting a cool blue-grey wash across her face and the bedding. Wedding
+  ring visible on her hand resting flat on her chest. Composition is wide angle from the foot of
+  the bed looking toward her. iPhone 15 Pro Night Mode aesthetic: natural image noise, authentic
+  cool blue-grey tones, realistic low-light rendering, muted shadows. Mood is heavy, still, lonely.
+  This looks like a photo someone accidentally took at 2am, not a lifestyle shoot. Real.
+  ====================================================================
+  -->
 
   <div class="article-body">
 
     <p>I don't usually talk about this.</p>
     <p>Not with my sister. Not with my best friend Karen who I've known since college. Not with the women I do yoga with on Tuesday mornings who I've told almost everything else to over the years.</p>
-    <p>Because how do you say it without sounding like you're complaining about your husband — who is, by every measure that matters, a genuinely good man.</p>
-    <p>But I was running on four hours of broken sleep a night for years, and I was slowly losing myself in it — my patience, my focus, that version of me I actually liked.</p>
-    <p>So I stopped waiting for the problem to fix itself. And I found something. I've been sitting on it for a few months now and I think I need to write it down — because if you're dealing with what I was dealing with, you need to know this exists.</p>
-
-
-    <!-- IMAGE 01 — HERO -->
-    <div class="img-block" id="img-01">
-      <img src="snorestop-image-01-hero.png" alt="Woman lying awake in bed at night looking exhausted while her husband sleeps in the background." loading="eager" decoding="async">
-    </div>
+    <p>Because how do you say it without sounding like you're complaining about your husband, who is by every measure that matters a genuinely good man.</p>
+    <p>But I was running on four hours of broken sleep a night for years, and I was slowly losing myself in it. My patience, my focus, that version of me I actually liked.</p>
+    <p>So I stopped waiting for the problem to fix itself. And I found something. I've been sitting on it for a few months now and I think I need to write it down, because if you're dealing with what I was dealing with, you need to know this exists.</p>
 
 
     <h2>It Started Small. The Way These Things Always Do.</h2>
 
     <p>In the beginning it was almost funny.</p>
-    <p>I'd elbow him, he'd roll over, problem solved. We laughed about it in the morning. I bought the foam earplugs from CVS — the bright orange ones that come in a little plastic jar — and for a while, that was enough.</p>
+    <p>I'd elbow him, he'd roll over, problem solved. We laughed about it in the morning. I bought the foam earplugs from CVS, the bright orange ones that come in a little plastic jar, and for a while that was enough.</p>
     <p>Then it wasn't.</p>
     <p>The earplugs started hurting after an hour, that pressurized feeling deep in your ears at 2am, so I'd pull them out and that's when I'd hear it. And once you hear it you can't unhear it.</p>
-    <p>He'd be completely unconscious — peaceful, unaware — and I'd be lying next to him, wide awake, watching the ceiling.</p>
-
+    <p>He'd be completely unconscious. Peaceful. Unaware. And I'd be lying next to him, wide awake, watching the ceiling.</p>
 
     <!-- IMAGE 02 -->
     <div class="img-block" id="img-02">
       <img src="snorestop-image-02-failed-solutions.png" alt="Bedside nightstand with earplugs, nose strips, and a mouthguard showing multiple failed snoring solutions." loading="lazy" decoding="async">
     </div>
+    <!--
+    ====================================================================
+    NANO BANANA PRO PROMPT — IMAGE 02 (FAILED SOLUTIONS):
+
+    Shot on iPhone 15 Pro, photorealistic, looks exactly like someone casually photographed their
+    nightstand at night using iPhone 15 Pro, with warm bedside lamp as the only light source,
+    natural image grain, zero studio feel, authentic warm amber shadows. Overhead slightly angled
+    close-up shot of a wooden bedside nightstand at night. On the nightstand: a half-opened pack
+    of bright orange foam earplugs with three loose ones scattered across the wood surface, a
+    crumpled used Breathe Right nasal strip beside the box, a bulky plastic anti-snore mouthguard
+    sitting in its open case obviously rarely used, a phone placed face-down showing no screen, and
+    a glass of water with condensation rings on the wood. The nightstand tells the story of someone
+    who has tried everything and nothing worked. Warm amber bedside lamp light from off-frame right
+    casting soft directional shadows across the objects. Wood grain surface slightly dusty. iPhone
+    15 Pro equivalent depth of field with the mouthguard as the sharpest object in frame. No people.
+    Mood is tired resignation and domestic realism. Warm amber lamp tones with cool shadow sides.
+    Authentically messy, the way a real bedroom nightstand looks at 2am after years of trying
+    things. No staging, no cleaning, no arrangement. Real.
+    ====================================================================
+    -->
 
 
     <h2>I Tried Everything. I Mean Everything.</h2>
 
     <p>White noise apps. Ocean sounds. Brown noise, which I didn't even know existed until I was googling things at 2am that no sane person should be googling at 2am.</p>
-    <p>A wedge pillow that was supposed to change his sleeping position. A nose strip phase that lasted exactly one week. A $280 mouthguard he ordered very seriously after one of our conversations — wore it twice, said it made his jaw ache, and it sat on his nightstand so long it became part of the furniture.</p>
+    <p>A wedge pillow that was supposed to change his sleeping position. A nose strip phase that lasted exactly one week. A $280 mouthguard he ordered very seriously after one of our conversations. Wore it twice, said it made his jaw ache, and it sat on his nightstand so long it became part of the furniture.</p>
     <p>Every time something new appeared I'd have this small flutter of hope. Told myself not to get excited. Got excited anyway. And then lay awake at 2am listening to the same sound, another attempt quietly added to the pile of things that didn't work.</p>
-    <p>After a while I stopped letting myself hope because being disappointed again felt worse than just accepting it.</p>
+    <p>After a while I stopped letting myself hope, because <strong>being disappointed again felt worse than just accepting it.</strong></p>
 
-
-    <!-- PULL QUOTE -->
     <div class="pull-quote">
-      <p>"After a while I stopped letting myself hope — because being disappointed again felt worse than just accepting it."</p>
+      <p>"After a while I stopped letting myself hope, because being disappointed again felt worse than just accepting it."</p>
     </div>
 
 
     <h2>Here's The Part I've Never Said Out Loud.</h2>
 
     <p>About two years in, I started going to bed earlier than him on purpose.</p>
-    <p>Not because I was tired at 9:30pm — I wasn't. I did it so I could get 90 minutes of real sleep before he came to bed and the whole thing started again. I was rationing my own sleep like it was something scarce that had to be carefully protected and managed.</p>
+    <p>Not because I was tired at 9:30pm. I wasn't. I did it so I could get 90 minutes of real sleep before he came to bed and the whole thing started again. <strong>I was rationing my own sleep</strong> like it was something scarce that had to be carefully protected and managed.</p>
     <p>I never told him that. It felt too cruel to say out loud.</p>
-    <p>And the exhaustion — it changes you in ways that are hard to explain to someone who hasn't lived it. It's not the dramatic kind of tired where you're falling asleep at your desk. It's quieter than that — forgetting words mid-sentence, crying in a parking lot over something completely insignificant and knowing somewhere underneath it that you're not actually crying about that, becoming a slightly worse version of yourself and not having the energy to do anything about it.</p>
+    <p>And the exhaustion, it changes you in ways that are hard to explain to someone who hasn't lived it. It's not the dramatic kind of tired where you're falling asleep at your desk. It's quieter than that. Forgetting words mid-sentence. Crying in a parking lot over something completely insignificant and knowing somewhere underneath it that you're not actually crying about that. Becoming a slightly worse version of yourself and not having the energy to do anything about it.</p>
     <p>I went to my doctor. She gave me a pamphlet about sleep hygiene that I threw away before I got to my car. Nobody thought to ask about him.</p>
-
 
     <!-- IMAGE 03 -->
     <div class="img-block" id="img-03">
       <img src="snorestop-image-03-exhaustion.png" alt="Exhausted woman sitting alone in a kitchen with a coffee mug the morning after another sleepless night." loading="lazy" decoding="async">
     </div>
+    <!--
+    ====================================================================
+    NANO BANANA PRO PROMPT — IMAGE 03 (EXHAUSTION):
+
+    Shot on iPhone 15 Pro, photorealistic, looks exactly like a candid photo taken on an iPhone 15
+    Pro by someone across the room that the subject doesn't know is being taken. iPhone 15 Pro
+    natural daylight color rendering, slight warm overexposure from morning window light, authentic
+    colors, natural grain, zero professional photography feel. A woman in her early-to-mid 40s
+    sitting completely alone at a kitchen table in the early morning, both hands wrapped tightly
+    around a large ceramic coffee mug, staring straight ahead at absolutely nothing with a hollow
+    blank expression. Still in pajamas or an oversized t-shirt. Hair loose and messy from sleep,
+    not styled. Natural morning light streaming through a window from the left side casting long
+    soft shadows across the table surface and her face. Kitchen is clean but the atmosphere is
+    heavy and completely still. No one else in frame. She looks profoundly tired in the specific
+    way that months of disrupted sleep creates — not crying, not visibly upset, just completely
+    depleted with faint dark circles under her eyes. Mid-shot from across the table at eye level,
+    she doesn't know she's being photographed. Mood is quiet, lonely, honest. Warm golden morning
+    window light on one side, cool shadow on the other. iPhone 15 Pro natural bokeh with her face
+    in sharp focus and kitchen background softly blurred. Absolutely zero staging. Real.
+    ====================================================================
+    -->
 
 
     <h2>I Tried To Talk To Him About It. More Than Once.</h2>
 
     <p>The first time he genuinely didn't believe it was that bad, so I showed him a recording I'd made on my phone. He was horrified for about a week and then slowly forgot about it.</p>
-    <p>The second time I cried — not on purpose, I was just so tired and I couldn't explain how tired I was without my voice breaking. He felt terrible. I felt terrible for making him feel terrible. We both agreed something had to change and then nothing changed.</p>
+    <p>The second time I cried, not on purpose, I was just so tired and I couldn't explain how tired I was without my voice breaking. He felt terrible. I felt terrible for making him feel terrible. We both agreed something had to change and then nothing changed.</p>
     <p>The third time I didn't bring it up the way I planned to. I just said very quietly that I couldn't keep going like this. He looked at me for a long moment and said he didn't know what to do.</p>
     <p>Neither did I. That was the whole problem.</p>
 
 
-    <h2>What I Found — And Why I Almost Didn't Try It.</h2>
+    <h2>What I Found, And Why I Almost Didn't Try It.</h2>
 
-    <p>I wasn't looking for anything specific the night I found SnoreStop — I was just on my phone, tired, reading about snoring because apparently that's what my life had become at midnight. And I came across it: a natural throat spray, not a device, not a machine, not something he had to mold or adjust or remember to charge.</p>
+    <p>I wasn't looking for anything specific the night I found SnoreStop. I was just on my phone, tired, reading about snoring because apparently that's what my life had become at midnight. And I came across it: a natural throat spray, not a device, not a machine, not something he had to mold or adjust or remember to charge.</p>
     <p>Just a spray. Two seconds before bed.</p>
     <p>My first thought was that it sounded too simple. My second thought was that everything I'd tried had been complicated and none of it had worked, so I ordered it. It arrived two days later and I put it on his nightstand without making a big deal of it.</p>
     <p>He noticed it the next morning, picked it up, read the back.</p>
     <p><em>"You want me to try this?"</em></p>
     <p>I said: <em>"I just want us both to sleep. So yes."</em></p>
-    <p>He used it that night the way you take a vitamin — something small and unremarkable that you do and then forget about. I woke up at some point in the early hours and realized it was quiet. Just quiet. I lay there waiting for it to start back up and it didn't.</p>
+    <p>He used it that night the way you take a vitamin. Something small and unremarkable that you do and then forget about. I woke up at some point in the early hours and realized it was quiet. Just quiet. I lay there waiting for it to start back up and it didn't.</p>
     <p>By the third night I was waking up in the morning doing that confused thing where you check your phone because you genuinely can't believe you slept through. 6:52am. Last time I'd looked at my phone was 11:08pm.</p>
-    <p>Nearly eight hours. I'm not going to pretend I didn't tear up a little — alone in bed at 6:52 in the morning, genuinely emotional about sleeping — but that's what four years does to you.</p>
-
+    <p><strong>Nearly eight hours.</strong> I'm not going to pretend I didn't tear up a little, alone in bed at 6:52 in the morning, genuinely emotional about sleeping. But that's what four years does to you.</p>
 
     <!-- IMAGE 04 -->
     <div class="img-block" id="img-04">
       <img src="snorestop-image-04-discovery.png" alt="Woman in a dark bedroom lit by phone glow, discovering a possible solution with cautious hope." loading="lazy" decoding="async">
     </div>
+    <!--
+    ====================================================================
+    NANO BANANA PRO PROMPT — IMAGE 04 (DISCOVERY MOMENT):
+
+    Shot on iPhone 15 Pro, photorealistic, looks exactly like an iPhone 15 Pro Night Mode photo
+    taken in a completely dark room with zero external light sources. The ONLY illumination is the
+    cold blue-white glow of a smartphone screen. A woman in her early 40s lying on her side in a
+    pitch-black bedroom, propped slightly on one elbow, holding her smartphone in front of her face.
+    The phone screen is the sole light source in the entire frame, casting sharp cold shadows across
+    her cheekbones, nose bridge and forehead, with a blue-white glow across her skin. Her expression
+    is caught mid-transition: she started the night exhausted and scrolling numbly but something she
+    just read has created a flicker of quiet cautious hope in her eyes, the kind that has been
+    burned before so it doesn't dare fully arrive. Husband barely visible as a dark shape in the
+    deep background, deeply asleep. Composition from slightly above her head looking down toward
+    her face at close range. Phone screen bright but specific content unreadable. iPhone 15 Pro
+    Night Mode aesthetic: natural noise grain, authentic cold blue-white tones from screen light,
+    realistic darkness, slight underexposure in shadows, razor-thin depth of field with only her
+    face and phone in focus. Mood is hushed, intimate, the specific loneliness of being the only
+    person awake in the world at midnight. Cold blue-white phone light on warm skin tone, absolute
+    darkness everywhere else. Completely real, not staged.
+    ====================================================================
+    -->
 
 
-    <h2>Why It Actually Works — And Why I Wish I'd Known Sooner.</h2>
+    <h2>Why It Actually Works, And Why I Wish I'd Known Sooner.</h2>
 
-    <p>This isn't some gadget someone invented in their garage last year and it isn't a mouthguard you have to boil or a machine that costs $1,500 and sounds like a vacuum cleaner running next to your head all night.</p>
-    <p><strong>SnoreStop has been in American pharmacies since 1995</strong> — thirty years, while every other snoring solution was coming and going, the strips, the devices, the $2,000 custom dental guards that take months to get and aren't covered by insurance. This one has just been quietly sitting on shelves, working, for three decades.</p>
-    <p>The reason it works is actually simple once you understand it. Snoring isn't a nose problem — it's a throat problem. While you sleep, the soft tissue in the back of the throat relaxes and collapses slightly, and when air passes through that narrowed space the tissue vibrates, and that vibration is the sound. That's all snoring is. SnoreStop coats that tissue with a fine natural spray that reduces the vibration — <strong>no mask, no device, no prescription, no doctor visit</strong> — just two seconds before bed.</p>
-
+    <p>This isn't some gadget someone invented in their garage last year. It isn't a mouthguard you have to boil or a machine that costs $1,500 and sounds like a vacuum cleaner running next to your head all night.</p>
+    <p><span class="hl"><strong>SnoreStop has been in American pharmacies since 1995.</strong></span> Thirty years. While every other snoring solution was coming and going, the strips, the devices, the $2,000 custom dental guards that take months to get and aren't covered by insurance, this one has just been quietly sitting on shelves, working, for three decades.</p>
+    <p>The reason it works is actually simple once you understand it. Snoring isn't a nose problem. It's a throat problem. While you sleep, the soft tissue in the back of the throat relaxes and collapses slightly, and when air passes through that narrowed space the tissue vibrates, and that vibration is the sound. That's all snoring is. SnoreStop coats that tissue with a fine natural spray that reduces the vibration. <strong>No mask. No device. No prescription. No doctor visit.</strong> Just two seconds before bed.</p>
 
     <!-- IMAGE 05 — PRODUCT SHOT -->
     <div class="img-block" id="img-05">
       <img src="snorestop-image-05-product.png" alt="SnoreStop throat spray bottle on a bedside nightstand in warm bedroom light." loading="lazy" decoding="async">
     </div>
+    <!--
+    ====================================================================
+    NANO BANANA PRO PROMPT — IMAGE 05 (PRODUCT ON NIGHTSTAND):
+    ATTACH SNORESTOP PRODUCT IMAGE BEFORE GENERATING.
 
+    Shot on iPhone 15 Pro, photorealistic, looks exactly like someone casually photographed their
+    nightstand before going to sleep using iPhone 15 Pro, warm bedside lamp as only light source,
+    natural indoor iPhone color rendering, authentic grain, zero commercial product photography
+    feel, no studio lighting. SnoreStop throat spray bottle sitting on a natural wood grain bedside
+    nightstand at night. The bottle is the clear hero of the frame, centered and lit by a warm
+    amber bedside lamp from the right side creating a soft golden glow wrapping around the bottle.
+    On the nightstand: a simple glass of water with light condensation, a phone placed face-down,
+    a folded paperback book with a bookmark. Nothing else. Background is a softly blurred bedroom:
+    white linen bedding, warm lamp shadows, curtained window out of focus. The product sits there
+    as part of a real person's authentic bedtime routine, not posed for a shoot. iPhone 15 Pro
+    equivalent f/1.78 depth of field, bottle label sharp and facing directly toward camera and
+    clearly readable, background with natural bokeh blur. Warm amber-gold color palette. Real
+    person's nightstand, not a studio. No hands in frame, no text overlays, no badges.
+    ====================================================================
+    -->
 
-    <!-- PRICE COMPARISON -->
     <div class="price-box">
-      <div class="price-box-title">💰 What Fixing Snoring Actually Costs — A Reality Check</div>
-      <div class="price-row"><span class="label">Sleep study / diagnosis</span><span class="amount">$1,000 – $3,500</span></div>
-      <div class="price-row"><span class="label">Custom dental MAD (dentist-fitted)</span><span class="amount">$1,500 – $4,500</span></div>
-      <div class="price-row"><span class="label">CPAP machine + accessories</span><span class="amount">$800 – $1,500+</span></div>
+      <div class="price-box-title">What fixing snoring actually costs in the US right now:</div>
+      <div class="price-row"><span class="label">Sleep study and diagnosis</span><span class="amount">$1,000 – $3,500</span></div>
+      <div class="price-row"><span class="label">Custom dental MAD from a dentist</span><span class="amount">$1,500 – $4,500</span></div>
+      <div class="price-row"><span class="label">CPAP machine and accessories</span><span class="amount">$800 – $1,500+</span></div>
       <div class="price-row"><span class="label">Minor throat surgery</span><span class="amount">$4,000 – $6,000</span></div>
-      <div class="price-row winner"><span class="label">✓ SnoreStop — Natural spray, pharmacies since 1995</span><span class="amount">$30</span></div>
+      <div class="price-row winner"><span class="label">&#10003; SnoreStop — Natural spray, in pharmacies since 1995</span><span class="amount">$30</span></div>
     </div>
 
-    <p>I spent four years not sleeping while a $30 natural spray that's been trusted since before I was married sat three miles from my house. That's the part I still can't get over. And it's been trusted by over <strong>250,000 people</strong> — not the fake five-star flood you see on new Amazon products, but thirty years of real word-of-mouth.</p>
-
+    <p>I spent four years not sleeping while a $30 natural spray that's been trusted since before I was married sat three miles from my house. <strong>That's the part I still can't get over.</strong> Over 250,000 people have already found this, and their reviews are not the fake five-star flood you see on new Amazon products. They're thirty years of real word-of-mouth from people who tried everything else first.</p>
+    <p>People like me.</p>
 
     <!-- FIRST CTA -->
     <div class="cta-wrap" id="first-cta">
-      <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">→ Check Availability — SnoreStop Official Site</a>
-      <div class="cta-subtext">Trusted by 250,000+ people · In US pharmacies since 1995 · Ships in 2 days</div>
+      <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability — SnoreStop Official Site</a>
+      <div class="cta-subtext">Trusted by 250,000+ people &middot; In US pharmacies since 1995 &middot; Ships in 2 days</div>
     </div>
 
 
     <h2>Three Months Later.</h2>
 
     <p>I stopped going to bed at 9:30pm to ration sleep before he came upstairs. I stopped keeping a mental log of what made things worse on any given night. I stopped lying next to him feeling something I didn't want to feel toward someone I love.</p>
-    <p>I stay up and watch shows with him again — stupid things, things that don't matter — and then we go to bed at the same time and I fall asleep and I wake up feeling like myself.</p>
-    <p>Our mornings are different now. He makes coffee, asks how I slept, and I actually have a real answer. That sounds like nothing. It's everything.</p>
-    <p>I didn't realize how much of us had quietly eroded under four years of me running on empty until I felt it start coming back — the patience, the warmth, the version of me that actually showed up for this marriage the way I always wanted to.</p>
-    <p>All of that was just sleep. We were one good night's sleep away from being okay and I didn't know it.</p>
-
+    <p>I stay up and watch shows with him again. Stupid things, things that don't matter. And then we go to bed at the same time and I fall asleep and I wake up feeling like myself.</p>
+    <p>Our mornings are different now. He makes coffee, asks how I slept, and I actually have a real answer. <span class="hl">That sounds like nothing. It's everything.</span></p>
+    <p>I didn't realize how much of us had quietly eroded under four years of me running on empty until I felt it start coming back. The patience, the warmth, the version of me that actually showed up for this marriage the way I always wanted to.</p>
+    <p>All of that was just sleep. <strong>We were one good night's sleep away from being okay and I didn't know it.</strong></p>
 
     <!-- IMAGE 06 -->
     <div class="img-block" id="img-06">
       <img src="snorestop-image-06-payoff.png" alt="Rested couple in a bright morning kitchen sharing coffee and looking relaxed." loading="lazy" decoding="async">
     </div>
+    <!--
+    ====================================================================
+    NANO BANANA PRO PROMPT — IMAGE 06 (PAYOFF):
+
+    Shot on iPhone 15 Pro, photorealistic, looks exactly like a candid photo taken on an iPhone 15
+    Pro by someone across the kitchen without the subjects knowing. iPhone 15 Pro natural daylight
+    quality, slight warm overexposure from morning window light flooding the scene, authentic colors,
+    natural grain, zero studio feel, zero staging. A couple in their early-to-mid 40s in a bright
+    weekend morning kitchen. The woman is sitting at a kitchen island or counter looking visibly
+    rested: eyes clear and bright without dark circles, posture completely relaxed and open, a
+    natural easy smile on her face that reaches her eyes, the kind of smile that comes from actual
+    rest not performance. Her husband stands beside her handing her a ceramic coffee mug, their
+    fingers touching briefly on the handle, a small unremarkable gesture of everyday intimacy. He
+    looks at her with a natural warm expression, not posed. Neither is looking at the camera.
+    Strong warm morning sunlight flooding through a large window directly behind them creating a
+    golden backlit glow around both figures. Casually dressed in weekend pajamas or soft morning
+    clothes. Coffee maker visible on counter in background. The scene radiates unhurried normalcy
+    and quiet relief. This is the "after" image. Shot from across the kitchen, iPhone 15 Pro
+    natural depth of field, couple in focus, background kitchen softly blurred. Warm golden-amber
+    morning color palette, only natural window light. Looks like a real moment, not an
+    advertisement. No eye contact with camera, no direct poses, no awareness of being photographed.
+    ====================================================================
+    -->
 
 
     <h2>The Part That Made Me Finally Pull The Trigger.</h2>
 
-    <p>I'll be honest — even at $30, even after reading everything about it, I hesitated. Because I'd been disappointed enough times that spending another dollar on another thing felt like more than I could take emotionally.</p>
-    <p>But here's what got me: <strong>SnoreStop comes with a full 30-day money back guarantee</strong> — and honestly that's the best part of this whole thing, better than the price, better than the thirty years in pharmacies, better than any review I read.</p>
+    <p>I'll be honest. Even at $30, even after reading everything about it, I hesitated. Because I'd been disappointed enough times that spending another dollar on another thing felt like more than I could take emotionally.</p>
+    <p>But here's what got me. <span class="hl"><strong>SnoreStop comes with a full 30-day money back guarantee</strong></span>, and honestly that's the best part of this whole thing, better than the price, better than the thirty years in pharmacies, better than any review I read.</p>
 
     <div class="guarantee-box">
-      <div class="guarantee-icon">🛡️</div>
-      <h3>Either It Works — Or It's Completely Free.</h3>
-      <div class="guarantee-statement">Two outcomes. That's it. Your sleep comes back — or your money does.</div>
-      <p>You try it for 30 full nights and if it doesn't do what it says, you get every single dollar back without a conversation, without having to justify yourself, without any runaround from a company that wasn't confident in what they were selling.</p>
-      <p>There is no version of trying SnoreStop where you lose — the guarantee makes that mathematically impossible. If they're willing to back it with a full refund for every single customer who isn't happy, they must know something. And 250,000 people and thirty years in pharmacies later, that confidence seems more than earned.</p>
+      <div class="guarantee-icon">&#128737;</div>
+      <h3>Either It Works, Or It's Completely Free.</h3>
+      <div class="guarantee-statement">Two outcomes. Your sleep comes back, or your money does.</div>
+      <p>You try it for 30 full nights and if it doesn't do what it says, you get every single dollar back. No conversation. No justifying yourself. No runaround from a company that wasn't confident in what they were selling.</p>
+      <p>There is no version of trying SnoreStop where you lose. The guarantee makes that mathematically impossible. If they're willing to back it with a full refund for every single customer who isn't happy, they must know something. And 250,000 people and thirty years in pharmacies later, that confidence seems more than earned.</p>
     </div>
 
 
@@ -684,171 +381,125 @@ body {
 
     <p>I'm not writing this because anyone asked me to.</p>
     <p>I'm writing this because I spent four years quietly suffering through something that had a solution I didn't know about, and that solution was sitting in a pharmacy three miles from my house the entire time.</p>
-    <p>If you're where I was — the earplugs, the white noise, the conversations that went nowhere, the slow exhaustion that became your normal — there is a way out and it's simpler than you think, and if it doesn't work you pay absolutely nothing because the guarantee covers you completely.</p>
+    <p>If you're where I was, the earplugs, the white noise, the conversations that went nowhere, the slow exhaustion that became your normal, there is a way out and it's simpler than you think. And if it doesn't work you pay absolutely nothing, because the guarantee covers you completely.</p>
     <p>You have everything to gain and literally nothing to lose.</p>
-    <p>I got my sleep back. I got myself back. I didn't realize how much of myself had gone with it until I felt it return — and I want that for you too.</p>
+    <p>I got my sleep back. I got myself back. I didn't realize how much of myself had gone with it until I felt it return, and I want that for you too.</p>
     <p><strong>Don't wait four years like I did.</strong></p>
 
-
-    <!-- FINAL CTA -->
     <div class="cta-wrap">
-      <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">→ Check Availability &amp; Claim Your SnoreStop Today</a>
+      <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability &amp; Claim Your SnoreStop Today</a>
       <div class="cta-subtext">
         Join 250,000+ people who've already made their nights quieter<br>
         Full 30-day money back guarantee — either it works or it's free<br>
-        Ships in 2 days · No prescription needed · Natural ingredients
+        Ships in 2 days &middot; No prescription needed &middot; Natural ingredients
       </div>
     </div>
 
 
-    <!-- ══ COMMENTS ══ -->
     <div class="comments-section">
       <div class="comments-title">Reader Comments</div>
 
       <div class="comment">
-        <div class="comment-avatar"><img src="testimonial-linda-r.png" alt="Linda R. profile photo" loading="lazy" decoding="async"></div>
+        <div class="c-avatar" style="background:#dbeafe;color:#1e40af;">L</div>
         <div class="comment-inner">
           <div class="comment-name">Linda R.</div>
           <div class="comment-text">The part about going to bed at 9:30pm to get ahead of it — I have been doing this exact thing for three years and never heard anyone else say it out loud. Ordering this today.</div>
-          <div class="comment-meta">
-            <span class="comment-action">👍 Like</span>
-            <span class="comment-action">Reply</span>
-            <span class="comment-likes">47 likes</span>
-            <span class="comment-time">2h ago</span>
-          </div>
+          <div class="comment-meta"><span class="c-action">&#128077; Like</span><span class="c-action">Reply</span><span class="c-likes">47 likes</span><span class="c-time">2h ago</span></div>
         </div>
       </div>
 
       <div class="comment reply">
-        <div class="comment-avatar"><img src="testimonial-michelle-t.png" alt="Michelle T. profile photo" loading="lazy" decoding="async"></div>
+        <div class="c-avatar" style="background:#fce7f3;color:#9d174d;">M</div>
         <div class="comment-inner">
           <div class="comment-name">Michelle T.</div>
           <div class="comment-text">Same. I thought I was the only one. My husband has no idea I do this. Reading this felt like someone reached into my brain.</div>
-          <div class="comment-meta">
-            <span class="comment-action">👍 Like</span>
-            <span class="comment-action">Reply</span>
-            <span class="comment-likes">31 likes</span>
-            <span class="comment-time">1h ago</span>
-          </div>
+          <div class="comment-meta"><span class="c-action">&#128077; Like</span><span class="c-action">Reply</span><span class="c-likes">31 likes</span><span class="c-time">1h ago</span></div>
         </div>
       </div>
 
       <div class="comment">
-        <div class="comment-avatar"><img src="testimonial-deborah-k.png" alt="Deborah K. profile photo" loading="lazy" decoding="async"></div>
+        <div class="c-avatar" style="background:#dcfce7;color:#166534;">D</div>
         <div class="comment-inner">
           <div class="comment-name">Deborah K.</div>
           <div class="comment-text">I bought SnoreStop two months ago after years of trying everything. The difference in the first week was enough that I actually cried. I don't say this lightly — it saved our marriage.</div>
-          <div class="comment-meta">
-            <span class="comment-action">👍 Like</span>
-            <span class="comment-action">Reply</span>
-            <span class="comment-likes">89 likes</span>
-            <span class="comment-time">3h ago</span>
-          </div>
+          <div class="comment-meta"><span class="c-action">&#128077; Like</span><span class="c-action">Reply</span><span class="c-likes">89 likes</span><span class="c-time">3h ago</span></div>
         </div>
       </div>
 
       <div class="comment reply">
-        <div class="comment-avatar"><img src="testimonial-michelle-t.png" alt="Janet W. profile photo" loading="lazy" decoding="async"></div>
+        <div class="c-avatar" style="background:#fef9c3;color:#854d0e;">J</div>
         <div class="comment-inner">
           <div class="comment-name">Janet W.</div>
-          <div class="comment-text">Does it really work from the first night? That's what I keep reading but it seems almost too good to be true after so many failed attempts.</div>
-          <div class="comment-meta">
-            <span class="comment-action">👍 Like</span>
-            <span class="comment-action">Reply</span>
-            <span class="comment-likes">12 likes</span>
-            <span class="comment-time">2h ago</span>
-          </div>
+          <div class="comment-text">Does it really work from the first night? Seems almost too good to be true after so many failed attempts.</div>
+          <div class="comment-meta"><span class="c-action">&#128077; Like</span><span class="c-action">Reply</span><span class="c-likes">12 likes</span><span class="c-time">2h ago</span></div>
         </div>
       </div>
 
       <div class="comment reply">
-        <div class="comment-avatar"><img src="testimonial-deborah-k.png" alt="Deborah K. profile photo" loading="lazy" decoding="async"></div>
+        <div class="c-avatar" style="background:#dcfce7;color:#166534;">D</div>
         <div class="comment-inner">
           <div class="comment-name">Deborah K.</div>
-          <div class="comment-text">For us yes, noticeably quieter from night one. By end of week one I stopped waking up entirely. Worst case you get your money back — just try it.</div>
-          <div class="comment-meta">
-            <span class="comment-action">👍 Like</span>
-            <span class="comment-action">Reply</span>
-            <span class="comment-likes">28 likes</span>
-            <span class="comment-time">1h ago</span>
-          </div>
+          <div class="comment-text">For us yes, noticeably quieter from night one. By end of week one I stopped waking up entirely. Worst case you get your money back, just try it.</div>
+          <div class="comment-meta"><span class="c-action">&#128077; Like</span><span class="c-action">Reply</span><span class="c-likes">28 likes</span><span class="c-time">1h ago</span></div>
         </div>
       </div>
 
       <div class="comment">
-        <div class="comment-avatar"><img src="testimonial-patricia-m.png" alt="Patricia M. profile photo" loading="lazy" decoding="async"></div>
+        <div class="c-avatar" style="background:#ede9fe;color:#5b21b6;">P</div>
         <div class="comment-inner">
           <div class="comment-name">Patricia M.</div>
-          <div class="comment-text">My husband was skeptical. I ordered it anyway and put it on his nightstand the same way this woman did. He used it without making a fuss. Six weeks ago. I've slept through every night since. I keep waiting for it to stop working. It hasn't.</div>
-          <div class="comment-meta">
-            <span class="comment-action">👍 Like</span>
-            <span class="comment-action">Reply</span>
-            <span class="comment-likes">64 likes</span>
-            <span class="comment-time">4h ago</span>
-          </div>
+          <div class="comment-text">My husband was skeptical. I ordered it anyway and put it on his nightstand the same way this woman did. He used it without making a fuss. That was six weeks ago. I've slept through every night since. I keep waiting for it to stop working. It hasn't.</div>
+          <div class="comment-meta"><span class="c-action">&#128077; Like</span><span class="c-action">Reply</span><span class="c-likes">64 likes</span><span class="c-time">4h ago</span></div>
         </div>
       </div>
 
       <div class="comment">
-        <div class="comment-avatar"><img src="testimonial-carol-b.png" alt="Carol B. profile photo" loading="lazy" decoding="async"></div>
+        <div class="c-avatar" style="background:#ffedd5;color:#9a3412;">C</div>
         <div class="comment-inner">
           <div class="comment-name">Carol B.</div>
           <div class="comment-text">I was quoted $2,400 for a dental device last year and said no because we couldn't afford it. $30 with a full money back guarantee feels almost unreasonably reasonable. Just ordered.</div>
-          <div class="comment-meta">
-            <span class="comment-action">👍 Like</span>
-            <span class="comment-action">Reply</span>
-            <span class="comment-likes">41 likes</span>
-            <span class="comment-time">5h ago</span>
-          </div>
+          <div class="comment-meta"><span class="c-action">&#128077; Like</span><span class="c-action">Reply</span><span class="c-likes">41 likes</span><span class="c-time">5h ago</span></div>
         </div>
       </div>
 
-    </div><!-- /comments -->
+    </div>
 
-
-    <!-- FOOTER -->
     <div class="page-footer">
-      <div class="footer-disclaimer">
-        This is an advertisement and not a news article, blog, or consumer protection publication. The author may receive compensation if a purchase is made using links on this page. Individual results may vary. SnoreStop is not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider if you suspect a serious underlying sleep disorder.
-      </div>
+      <div class="footer-disclaimer">This is an advertisement and not a news article, blog, or consumer protection publication. The author may receive compensation if a purchase is made using links on this page. Individual results may vary. SnoreStop is not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider if you suspect a serious underlying sleep disorder.</div>
       <div class="footer-links">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Service</a>
         <a href="#">Refund Policy</a>
         <a href="#">Contact</a>
       </div>
-      <div class="footer-copy">© 2026 The Lived Truth · thelivedtruth.com · All Rights Reserved</div>
+      <div class="footer-copy">2026 The Lived Truth &middot; thelivedtruth.com &middot; All Rights Reserved</div>
     </div>
 
-  </div><!-- /article-body -->
+  </div>
 </main>
 
-
-<!-- ══ STICKY CTA — BUTTON ONLY ══ -->
+<!-- STICKY CTA — BUTTON ONLY — appears at 65% page scroll, stays visible permanently after that -->
 <div class="sticky-cta" id="sticky-cta">
-  <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">→ Check Availability — SnoreStop Official Site</a>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability — SnoreStop Official Site</a>
 </div>
 
-
 <script>
-  // Sticky appears only after first CTA is scrolled past
-  const firstCta = document.getElementById('first-cta');
   const stickyCta = document.getElementById('sticky-cta');
+  let shown = false;
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-          stickyCta.classList.add('show');
-        } else {
-          stickyCta.classList.remove('show');
-        }
-      });
-    },
-    { threshold: 0, rootMargin: '0px' }
-  );
+  function onScroll() {
+    if (shown) return;
+    const scrolled = window.scrollY + window.innerHeight;
+    const total = document.documentElement.scrollHeight;
+    if (scrolled / total >= 0.65) {
+      stickyCta.classList.add('show');
+      shown = true;
+      window.removeEventListener('scroll', onScroll);
+    }
+  }
 
-  observer.observe(firstCta);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 </script>
 
 </body>
