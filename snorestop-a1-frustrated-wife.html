@@ -26,7 +26,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 .author-name{font-size:14px;font-weight:600;color:#111}
 .author-sub{font-size:12px;color:#888}
 .verified-tag{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:#2e7d32;font-weight:600;background:#f0faf0;border:1px solid #c8e6c9;padding:2px 8px;border-radius:20px;margin-top:3px}
-.img-block{margin-block:28px;border-radius:8px;overflow:hidden;border:1px solid #e5e5e5;background:#f7f7f7;content-visibility:auto;contain-intrinsic-size:720px 405px}
+.img-block{margin-block:28px;border-radius:10px;overflow:hidden;border:1px solid #e5e5e5;background:#f7f7f7;content-visibility:auto;contain-intrinsic-size:720px 405px}
 .img-block img{width:100%;aspect-ratio:1280/720;display:block;height:auto;object-fit:cover}
 .article-body{padding-top:0}
 .article-body p{margin-bottom:20px;color:#1a1a1a;font-size:17px;line-height:1.78}
@@ -52,13 +52,13 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 .guarantee-box p:last-child{margin-bottom:0}
 .guarantee-statement{background:#fff;border:1px solid #a5d6a7;border-radius:6px;padding:14px 18px;margin:16px 0;font-size:18px;font-weight:700;color:#1b5e20;line-height:1.4}
 .cta-wrap{text-align:center;margin:32px 0}
-.cta-btn{display:block;width:100%;background:#149312;color:#fff;font-size:17px;font-weight:700;text-align:center;text-decoration:none;padding:19px 28px;border-radius:6px;border:none;cursor:pointer;transition:background .2s,transform .1s;letter-spacing:.01em;line-height:1.3}
+.cta-btn{display:block;width:100%;background:#149312;color:#fff;font-size:22px;font-weight:700;text-align:center;text-decoration:none;padding:19px 28px;border-radius:6px;border:none;cursor:pointer;transition:background .2s,transform .1s;letter-spacing:.01em;line-height:1.3}
 .cta-btn:hover{background:#1d4ed8}
 .cta-btn:active{transform:scale(.99)}
 .cta-subtext{font-size:12px;color:#888;margin-top:10px;line-height:1.65;text-align:center}
-.sticky-cta{position:fixed;bottom:0;left:0;right:0;padding:12px 20px 16px;background:rgba(255,255,255,.97);border-top:1px solid #e0e0e0;z-index:9999;transform:translateY(110%);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:0 -4px 24px rgba(0,0,0,.09)}
+.sticky-cta{position:fixed;bottom:14px;left:0;right:0;padding:0 16px;background:transparent;border-top:none;z-index:9999;transform:translateY(140%);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:none;pointer-events:none;text-align:center}
 .sticky-cta.show{transform:translateY(0)}
-.sticky-cta .cta-btn{max-width:680px;margin:0 auto;display:block;font-size:16px;padding:16px 28px}
+.sticky-cta .cta-btn{width:auto;max-width:none;margin:0 auto;display:inline-block;font-size:22px;padding:16px 28px;border-radius:6px;box-shadow:0 10px 28px rgba(0,0,0,.2);pointer-events:auto}
 .comments-section{border-top:2px solid #e5e5e5;margin-top:52px;padding-top:30px}
 .comments-title{font-size:18px;font-weight:700;color:#111;margin-bottom:24px}
 .comment{display:flex;gap:12px;margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid #f0f0f0}
@@ -80,11 +80,11 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 .footer-links a:hover{color:#333;text-decoration:underline}
 .footer-copy{font-size:11px;color:#ccc}
 @media(max-width:520px){
-  .article-headline{font-size:24px}
+  .article-headline{font-size:28px}
   body{font-size:16px}
   .article-body p{font-size:18px}
   .page-wrap{padding:0 16px 120px}
-  .img-block{margin-block:22px;margin-inline:-16px;border-left:none;border-right:none;border-radius:0}
+  .img-block{margin-block:22px;margin-inline:0}
   .img-block img{aspect-ratio:16/9}
   .price-box{padding:18px 14px}
   .price-box-title{font-size:17px;line-height:1.4;margin-bottom:12px}
@@ -140,7 +140,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
       </div>
       <div class="author-meta">
         <div class="author-name">Sarah M. - Top Voice</div>
-        <div class="author-sub">April 24, 2026  250,000+ people helped</div>
+        <div class="author-sub">April 24, 2026 . 250,000+ people helped</div>
         <div class="verified-tag">&#10003; Verified Story</div>
       </div>
     </div>
@@ -353,7 +353,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 
     <!-- FIRST CTA -->
     <div class="cta-wrap" id="first-cta">
-      <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability — SnoreStop Official Site</a>
+      <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability Now!</a>
       <div class="cta-subtext">Trusted by 250,000+ people &middot; In US pharmacies since 1995 &middot; Ships in 2 days</div>
     </div>
 
@@ -419,7 +419,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
     <p><strong>Don't wait four years like I did.</strong></p>
 
     <div class="cta-wrap">
-      <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability &amp; Claim Your SnoreStop Today</a>
+      <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability Now!</a>
       <div class="cta-subtext">
         Join 250,000+ people who've already made their nights quieter<br>
         Full 30-day money back guarantee — either it works or it's free<br>
@@ -512,7 +512,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 
 <!-- STICKY CTA — BUTTON ONLY — appears at 65% page scroll, stays visible permanently after that -->
 <div class="sticky-cta" id="sticky-cta">
-  <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability — SnoreStop Official Site</a>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability Now!</a>
 </div>
 
 <script>
