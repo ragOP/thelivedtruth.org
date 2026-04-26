@@ -23,9 +23,9 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 .author-name{font-size:14px;font-weight:600;color:#111}
 .author-sub{font-size:12px;color:#888}
 .verified-tag{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:#2e7d32;font-weight:600;background:#f0faf0;border:1px solid #c8e6c9;padding:2px 8px;border-radius:20px;margin-top:3px}
-.img-block{width:100%;aspect-ratio:1280/720;background:#f5f5f5;border:1px solid #e5e5e5;border-radius:6px;margin:28px 0;position:relative;overflow:hidden}
+.img-block{width:100%;aspect-ratio:1280/720;background:#f5f5f5;border:1px solid #e5e5e5;border-radius:10px;margin-block:28px;position:relative;overflow:hidden}
 .img-block img{width:100%;height:100%;object-fit:cover;display:block}
-.article-body{padding-top:28px}
+.article-body{padding-top:0}
 .article-body p{margin-bottom:20px;color:#1a1a1a;font-size:17px;line-height:1.78}
 .article-body p strong{font-weight:700;color:#111}
 .article-body p em{font-style:italic;color:#333}
@@ -49,13 +49,13 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 .guarantee-box p:last-child{margin-bottom:0}
 .guarantee-statement{background:#fff;border:1px solid #a5d6a7;border-radius:6px;padding:14px 18px;margin:16px 0;font-size:18px;font-weight:700;color:#1b5e20;line-height:1.4}
 .cta-wrap{text-align:center;margin:32px 0}
-.cta-btn{display:block;width:100%;background:#2563eb;color:#fff;font-size:17px;font-weight:700;text-align:center;text-decoration:none;padding:19px 28px;border-radius:6px;border:none;cursor:pointer;transition:background .2s,transform .1s;letter-spacing:.01em;line-height:1.3}
+.cta-btn{display:block;width:100%;background:#2563eb;color:#fff;font-size:22px;font-weight:700;text-align:center;text-decoration:none;padding:19px 28px;border-radius:6px;border:none;cursor:pointer;transition:background .2s,transform .1s;letter-spacing:.01em;line-height:1.3}
 .cta-btn:hover{background:#1d4ed8}
 .cta-btn:active{transform:scale(.99)}
 .cta-subtext{font-size:12px;color:#888;margin-top:10px;line-height:1.65;text-align:center}
-.sticky-cta{position:fixed;bottom:0;left:0;right:0;padding:12px 20px 16px;background:rgba(255,255,255,.97);border-top:1px solid #e0e0e0;z-index:9999;transform:translateY(110%);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:0 -4px 24px rgba(0,0,0,.09)}
+.sticky-cta{position:fixed;bottom:14px;left:0;right:0;padding:0 16px;background:transparent;border-top:none;z-index:9999;transform:translateY(140%);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:none;pointer-events:none;text-align:center}
 .sticky-cta.show{transform:translateY(0)}
-.sticky-cta .cta-btn{max-width:680px;margin:0 auto;display:block;font-size:16px;padding:16px 28px}
+.sticky-cta .cta-btn{width:100%;max-width:680px;margin:0 auto;display:block;font-size:22px;padding:19px 28px;border-radius:6px;box-shadow:0 10px 28px rgba(0,0,0,.2);pointer-events:auto}
 .comments-section{border-top:2px solid #e5e5e5;margin-top:52px;padding-top:30px}
 .comments-title{font-size:18px;font-weight:700;color:#111;margin-bottom:24px}
 .comment{display:flex;gap:12px;margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid #f0f0f0}
@@ -80,8 +80,32 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   body{font-size:16px}
   .article-body p{font-size:16px}
   .page-wrap{padding:0 16px 120px}
-  .price-box{padding:18px 16px}
-  .price-row.winner{margin:4px -16px -18px;padding:14px 16px}
+  .price-box{padding:18px 14px}
+  .price-box-title{font-size:17px;line-height:1.4;margin-bottom:12px}
+  .price-row{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:start;
+    gap:8px 14px;
+    padding:12px 0;
+  }
+  .price-row .label{font-size:15px;line-height:1.45}
+  .price-row .amount{
+    font-size:16px;
+    white-space:nowrap;
+    text-align:right;
+    line-height:1.3;
+  }
+  .price-row.winner{
+    margin:6px -14px -18px;
+    padding:14px 14px;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:start;
+    gap:8px 14px;
+  }
+  .price-row.winner .label{font-size:15px;line-height:1.45;text-wrap:balance}
+  .price-row.winner .amount{font-size:20px}
   .guarantee-box{padding:20px 16px}
   .article-head{padding:24px 0 0}
 }
@@ -105,7 +129,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
       <span class="bracket"> (Do This Tonight)</span>
     </h1>
     <div class="author-row">
-      <div class="author-avatar">A</div>
+      <div class="author-avatar">AK</div>
       <div class="author-meta">
         <div class="author-name">Audrey K. &mdash; Contributing Writer</div>
         <div class="author-sub">April 24, 2026 &middot; 6 min read &middot; 250,000+ people helped</div>
@@ -317,7 +341,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 
     <!-- FIRST CTA -->
     <div class="cta-wrap" id="first-cta">
-      <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability — SnoreStop Official Site</a>
+      <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability Now!</a>
       <div class="cta-subtext">Trusted by 250,000+ people &middot; In US pharmacies since 1995 &middot; Ships in 2 days</div>
     </div>
 
@@ -382,7 +406,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 
     <!-- FINAL CTA -->
     <div class="cta-wrap">
-      <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability &amp; Claim Your SnoreStop Today</a>
+      <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability Now!</a>
       <div class="cta-subtext">
         Join 250,000+ people who've already made their nights quieter<br>
         Full 30-day money back guarantee — either it works or it's free<br>
@@ -396,7 +420,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
       <div class="comments-title">Reader Comments</div>
 
       <div class="comment">
-        <div class="c-avatar" style="background:#dbeafe;color:#1e40af;">W</div>
+        <div class="c-avatar" style="background:#dbeafe;color:#1e40af;">WB</div>
         <div class="comment-inner">
           <div class="comment-name">Wren B.</div>
           <div class="comment-text">the part about saying fine every morning. i have said fine every single morning for two years and i have never been fine. ordering right now</div>
@@ -405,7 +429,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
       </div>
 
       <div class="comment">
-        <div class="c-avatar" style="background:#fce7f3;color:#9d174d;">P</div>
+        <div class="c-avatar" style="background:#fce7f3;color:#9d174d;">PS</div>
         <div class="comment-inner">
           <div class="comment-name">Petra S.</div>
           <div class="comment-text">slowly stealing the version of me that showed up for this marriage. i felt that in my chest. that is exactly what it is and i couldn't have put words to it until just now</div>
@@ -414,7 +438,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
       </div>
 
       <div class="comment reply">
-        <div class="c-avatar" style="background:#dcfce7;color:#166534;">C</div>
+        <div class="c-avatar" style="background:#dcfce7;color:#166534;">CM</div>
         <div class="comment-inner">
           <div class="comment-name">Cleo M.</div>
           <div class="comment-text">same. i read that line three times. thats the whole thing right there</div>
@@ -423,7 +447,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
       </div>
 
       <div class="comment">
-        <div class="c-avatar" style="background:#fef9c3;color:#854d0e;">O</div>
+        <div class="c-avatar" style="background:#fef9c3;color:#854d0e;">OR</div>
         <div class="comment-inner">
           <div class="comment-name">Odette R.</div>
           <div class="comment-text">the guest room thing. i have been having that conversation in my head for months and not saying it out loud for exactly the reason she described. thank you for writing this</div>
@@ -432,7 +456,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
       </div>
 
       <div class="comment">
-        <div class="c-avatar" style="background:#ede9fe;color:#5b21b6;">F</div>
+        <div class="c-avatar" style="background:#ede9fe;color:#5b21b6;">FH</div>
         <div class="comment-inner">
           <div class="comment-name">Faye H.</div>
           <div class="comment-text">he wakes up refreshed every morning and asks how i slept with genuine curiosity. i could have written that sentence myself. every single morning</div>
@@ -441,7 +465,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
       </div>
 
       <div class="comment reply">
-        <div class="c-avatar" style="background:#ffedd5;color:#9a3412;">M</div>
+        <div class="c-avatar" style="background:#ffedd5;color:#9a3412;">MT</div>
         <div class="comment-inner">
           <div class="comment-name">Maren T.</div>
           <div class="comment-text">and you have to decide in that moment whether to actually answer or just say fine and protect him from something he can't help. exhausting on top of exhausting</div>
@@ -450,7 +474,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
       </div>
 
       <div class="comment">
-        <div class="c-avatar" style="background:#dcfce7;color:#166534;">S</div>
+        <div class="c-avatar" style="background:#dcfce7;color:#166534;">SW</div>
         <div class="comment-inner">
           <div class="comment-name">Soleil W.</div>
           <div class="comment-text">under $50 and a money back guarantee. i've spent so much more than that on things that didn't work. ordering</div>
@@ -459,7 +483,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
       </div>
 
       <div class="comment">
-        <div class="c-avatar" style="background:#dbeafe;color:#1e40af;">B</div>
+        <div class="c-avatar" style="background:#dbeafe;color:#1e40af;">BC</div>
         <div class="comment-inner">
           <div class="comment-name">Brynn C.</div>
           <div class="comment-text">the quiet unfairness of him sleeping perfectly while you lie there. nobody talks about that part. nobody</div>
@@ -468,7 +492,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
       </div>
 
       <div class="comment reply">
-        <div class="c-avatar" style="background:#fce7f3;color:#9d174d;">D</div>
+        <div class="c-avatar" style="background:#fce7f3;color:#9d174d;">DF</div>
         <div class="comment-inner">
           <div class="comment-name">Delia F.</div>
           <div class="comment-text">because saying it out loud sounds like you're blaming him for something he can't control and you end up feeling guilty on top of everything else. this whole post is so real</div>
@@ -496,25 +520,21 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 
 <!-- STICKY CTA — BUTTON ONLY — appears at 65% page scroll -->
 <div class="sticky-cta" id="sticky-cta">
-  <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability — SnoreStop Official Site</a>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability Now!</a>
 </div>
 
 <script>
   const stickyCta = document.getElementById('sticky-cta');
-  let shown = false;
 
   function onScroll() {
-    if (shown) return;
     const scrolled = window.scrollY + window.innerHeight;
     const total = document.documentElement.scrollHeight;
-    if (scrolled / total >= 0.65) {
-      stickyCta.classList.add('show');
-      shown = true;
-      window.removeEventListener('scroll', onScroll);
-    }
+    const shouldShow = (scrolled / total) >= 0.65;
+    stickyCta.classList.toggle('show', shouldShow);
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
   onScroll();
 </script>
 
