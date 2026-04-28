@@ -248,7 +248,7 @@ def load_prompts(single_prompt: str | None, prompts_file: str | None) -> list[st
 
 
 PLACEHOLDER_PATTERN = re.compile(
-    r'(<div class="img-placeholder" style="height:(\d+)px;">\s*NANO BANANA PRO — 1280×720px\s*\n)(.*?)(</div>)',
+    r'(<div class="img-placeholder"(?:\s+style="height:(\d+)px;")?>\s*NANO BANANA PRO — 1280×720px\s*\n)(.*?)(</div>)',
     re.DOTALL,
 )
 
