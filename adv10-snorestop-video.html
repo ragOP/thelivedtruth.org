@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Had No Idea How Intense My Snoring Was Until My Wife Showed Me The Video She Recorded One Night. | The Lived Truth</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--body:#1a1a1a;--secondary:#444;--muted:#888;--bg:#fff;--bg2:#f8f8f6;--border:#e5e5e5;--blue:#2563eb;--blue2:#1d4ed8;--green:#2e7d32;--green-light:#f0faf0;--yellow:#fff176;--red:#dc2626}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;font-size:17px;line-height:1.78;color:var(--body);background:var(--bg);-webkit-font-smoothing:antialiased}
+#progress-bar{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(to right,#2563eb,#7c3aed);z-index:9999;transition:width .1s linear}
+#reading-indicator{position:fixed;bottom:20px;right:20px;background:rgba(0,0,0,.75);color:#fff;font-size:12px;font-family:'Inter',sans-serif;padding:6px 12px;border-radius:20px;display:flex;align-items:center;gap:6px;z-index:9998;opacity:0;transition:opacity .3s}
+#reading-indicator.visible{opacity:1}
+.pulse-dot{width:6px;height:6px;background:#2563eb;border-radius:50%;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+#sticky-cta{position:fixed;bottom:14px;left:0;right:0;padding:0 16px;background:transparent;border-top:none;z-index:9999;transform:translateY(140%);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:none;pointer-events:none;text-align:center}
+#sticky-cta.visible{transform:translateY(0)}
+#sticky-cta a{display:block;width:100%;max-width:680px;margin:0 auto;background:#149312;color:#fff;text-decoration:none;padding:19px 28px;border-radius:6px;font-size:22px;font-weight:700;font-family:'Inter',sans-serif;transition:background .2s,transform .1s;text-align:center;line-height:1.3;box-shadow:0 10px 28px rgba(0,0,0,.2);pointer-events:auto;position:relative;overflow:hidden;isolation:isolate;letter-spacing:.01em}
+#sticky-cta a::before{content:"";position:absolute;top:0;left:-75%;width:42%;height:100%;background:linear-gradient(110deg,rgba(255,255,255,0),rgba(255,255,255,.35),rgba(255,255,255,0));transform:skewX(-20deg);animation:cta-shimmer 4.4s ease-in-out infinite;pointer-events:none}
+#sticky-cta a:hover{background:#1d4ed8}
+#sticky-cta a:active{transform:scale(.99)}
+.site-header{border-bottom:1px solid var(--border);padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+.site-logo{font-family:'Lora',serif;font-size:20px;font-weight:600;color:var(--body);text-decoration:none}
+.site-logo span{font-size:11px;font-weight:400;font-family:'Inter',sans-serif;color:var(--muted);display:block;letter-spacing:.05em;text-transform:uppercase}
+.advertorial-label{font-size:11px;color:var(--muted);font-family:'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--border);padding:4px 10px;border-radius:3px}
+.content-wrap{max-width:680px;margin:0 auto;padding:0 20px 100px}
+.category-tag{display:inline-block;font-size:11px;font-family:'Inter',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:32px 0 16px}
+h1{font-family:'Lora',serif;font-size:32px;font-weight:600;line-height:1.22;color:var(--body);margin-bottom:8px}
+h1 .bracket{font-style:italic;color:var(--blue)}
+.author-row{display:flex;align-items:center;gap:12px;margin:20px 0 24px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+.author-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:16px;flex-shrink:0}
+.author-meta{flex:1}
+.author-name{font-size:14px;font-weight:600;color:var(--body)}
+.author-detail{font-size:12px;color:var(--muted);margin-top:1px}
+.verified-badge{font-size:11px;background:var(--green-light);color:var(--green);padding:3px 8px;border-radius:3px;font-weight:500;white-space:nowrap}
+.img-placeholder{width:100%;background:var(--bg2);border:1px dashed var(--border);border-radius:4px;color:var(--muted);font-size:12px;font-family:'Inter',sans-serif;padding:24px 20px;margin:28px 0;line-height:1.6;white-space:pre-wrap;word-break:break-word}
+p{margin-bottom:20px;color:var(--body)}
+h2{font-family:'Lora',serif;font-size:24px;font-weight:600;color:var(--body);margin-top:44px;margin-bottom:16px;line-height:1.3}
+.pull-quote{border-left:3px solid var(--blue);margin:36px 0;padding:4px 0 4px 24px}
+.pull-quote p{font-family:'Lora',serif;font-size:20px;font-style:italic;color:var(--blue);line-height:1.5;margin:0}
+.section-divider{text-align:center;font-size:13px;font-family:'Inter',sans-serif;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin:48px 0 32px;display:flex;align-items:center;gap:16px}
+.section-divider::before,.section-divider::after{content:'';flex:1;height:1px;background:var(--border)}
+.price-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px}
+.price-table th{background:var(--bg2);padding:10px 14px;text-align:left;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;border-bottom:2px solid var(--border)}
+.price-table td{padding:12px 14px;border-bottom:1px solid var(--border);color:var(--secondary);vertical-align:top}
+.price-table tr.winner td{background:var(--green-light);color:var(--green);font-weight:600}
+.price-table tr.winner td:first-child{border-left:3px solid var(--green)}
+.reviews-wrap{margin:24px 0}
+.review-card{background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:18px 20px;margin-bottom:14px}
+.review-stars{color:#f59e0b;font-size:14px;margin-bottom:6px}
+.review-text{font-size:15px;color:var(--secondary);font-style:italic;margin-bottom:8px;line-height:1.6}
+.review-author{font-size:13px;color:var(--muted);font-weight:500}
+.cta-wrap{text-align:center;margin:32px 0}
+.cta-btn{display:block;width:100%;background:#149312;color:#fff;font-size:22px;font-weight:700;text-align:center;text-decoration:none;padding:19px 28px;border-radius:6px;border:none;cursor:pointer;transition:background .2s,transform .1s;letter-spacing:.01em;line-height:1.3;position:relative;overflow:hidden;isolation:isolate}
+.cta-btn::before{content:"";position:absolute;top:0;left:-75%;width:42%;height:100%;background:linear-gradient(110deg,rgba(255,255,255,0),rgba(255,255,255,.35),rgba(255,255,255,0));transform:skewX(-20deg);animation:cta-shimmer 4.4s ease-in-out infinite;pointer-events:none}
+.cta-btn:hover{background:#1d4ed8}
+.cta-btn:active{transform:scale(.99)}
+@keyframes cta-shimmer{0%{left:-75%}65%{left:130%}100%{left:130%}}
+.trust-signals{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:12px;justify-content:center}
+.trust-item{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:5px}
+.trust-item::before{content:'✓';color:var(--green);font-weight:700}
+.guarantee-box{background:var(--green-light);border:2px solid var(--green);border-radius:8px;padding:28px;margin:36px 0}
+.guarantee-box h3{font-family:'Lora',serif;font-size:20px;font-weight:600;color:var(--green);margin-bottom:12px}
+.guarantee-box p{color:#1b5e20;font-size:15px;margin-bottom:12px}
+.guarantee-box .g-statement{font-family:'Lora',serif;font-style:italic;font-size:17px;color:var(--green);border-top:1px solid rgba(46,125,50,.2);padding-top:14px;margin-bottom:0}
+.comments-section{margin-top:56px;padding-top:32px;border-top:2px solid var(--border)}
+.comments-title{font-family:'Lora',serif;font-size:22px;font-weight:600;margin-bottom:28px}
+.comment{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+.comment:last-child{border-bottom:none}
+.comment-header{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.comment-avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:600;flex-shrink:0}
+.comment-name{font-size:14px;font-weight:600}
+.comment-time{font-size:12px;color:var(--muted);margin-left:auto}
+.comment-text{font-size:15px;color:var(--secondary);line-height:1.65;padding-left:44px}
+.comment-likes{font-size:12px;color:var(--muted);margin-top:6px;padding-left:44px}
+.comment-reply{margin-top:16px;margin-left:44px;padding:16px;background:var(--bg2);border-radius:6px;border-left:2px solid var(--border)}
+.comment-reply .comment-text{padding-left:44px;font-size:14px}
+.site-footer{border-top:1px solid var(--border);padding:32px 20px;margin-top:60px;text-align:center;font-size:12px;color:var(--muted);line-height:1.7}
+.site-footer a{color:var(--muted);text-decoration:underline}
+@media(max-width:680px){h1{font-size:26px}h2{font-size:21px}.pull-quote p{font-size:18px}.trust-signals{justify-content:flex-start}}
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+<div id="reading-indicator"><div class="pulse-dot"></div><span id="read-pct">0% read</span></div>
+<div id="sticky-cta"><a href="YOUR_AFFILIATE_LINK_HERE">Check Availability Now ❯</a></div>
+
+<header class="site-header">
+  <a href="/" class="site-logo">The Lived Truth<span>Real stories. Real lives.</span></a>
+  <span class="advertorial-label">Advertorial</span>
+</header>
+
+<main class="content-wrap">
+
+<span class="category-tag">Personal Story</span>
+
+<h1>I Had No Idea How Intense My Snoring Was Until My Wife Showed Me The Video She Recorded One Night. <span class="bracket">(Here's What Finally Fixed It)</span></h1>
+
+<div class="author-row">
+  <div class="author-avatar">MD</div>
+  <div class="author-meta">
+    <div class="author-name">Mark D., 45 — Husband of 13 years · Seattle, WA</div>
+    <div class="author-detail">Published April 2025 · Part of 250,000+ people who found relief</div>
+  </div>
+  <span class="verified-badge">✓ Verified</span>
+</div>
+
+<img src="outputs/kie/2026-04-29/snorestop-adv8/20260429-021844_01_ultra-realistic-iphone-15-pro-rear-camera-photo_1.png" alt="Story image 1" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
+
+<p>I felt completely fine every morning.</p>
+
+<p>That was the story I had built and lived inside for years. Eight hours of sleep, wake up, feel fine, move on. My wife mentioned my snoring occasionally and I acknowledged it the way you acknowledge something that isn't your problem because you sleep through every second of it. I'd bought strips at some point. They helped a little. We moved on.</p>
+
+<p>I had never once seen myself sleep. Never heard myself. Never had any reason to question the story because every morning the story checked out. I felt fine.</p>
+
+<p>Then one Sunday morning she handed me her phone without saying anything and pressed play.</p>
+
+<p>What I watched for the next forty seconds is not something I can fully describe in a way that will land the way it landed for me in that moment. What I can tell you is that the person on that screen and the person I believed I was when I closed my eyes every night were not the same person. Not even close.</p>
+
+<p>What I found after that morning is in what I wrote below. The fix turned out to be so simple after everything I went through that I'm still angry about how long it took me to get there. Read it before you spend another year feeling fine.</p>
+
+<h2>It started as something I dismissed</h2>
+
+<p>My snoring had apparently been going on for years.</p>
+
+<p>I say apparently because I was asleep for every second of it and had no firsthand experience of it whatsoever. My wife mentioned it. I believed her in the abstract the way you believe someone when they tell you something about yourself that you cannot verify. I bought strips. I tried sleeping on my side. I said I'd look into it and then didn't because every morning I woke up feeling fine and fine people do not look into things urgently.</p>
+
+<p>She stopped mentioning it after a while.</p>
+
+<p>I took that as a good sign. I understand now that she stopped mentioning it because she had accepted that mentioning it wasn't going to produce any meaningful action and she was tired of having the same conversation that went nowhere. She was still lying next to it every night. She had just stopped reporting on it because the reports weren't changing anything.</p>
+
+<p>Meanwhile I kept waking up every morning feeling fine and telling myself the story that feeling fine meant everything was fine and that if something were seriously wrong someone would have said something by now.</p>
+
+<p>She had said something. Many times. I just hadn't heard it as seriously wrong.</p>
+
+<img src="outputs/kie/2026-04-29/snorestop-adv8/20260429-021934_02_ultra-realistic-iphone-15-pro-rear-camera-photo_1.png" alt="Story image 2" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
+
+<h2>The video</h2>
+
+<p>She had been recording it for three weeks before she showed me.</p>
+
+<p>She told me this after. She'd started recording because she wanted to show me something she couldn't describe accurately enough in words and she knew I wouldn't believe the description anyway. So she recorded it. Several nights. Built up a folder of evidence she hadn't shown me yet because she wasn't sure how I was going to react.</p>
+
+<p>The Sunday morning she finally showed me she just handed me the phone and pressed play and sat there watching my face while I watched the screen.</p>
+
+<p>I want to be honest about what I saw because I think it matters.</p>
+
+<p>The night vision made everything look clinical and slightly alien, grey and grainy and lit from no obvious source, the way security footage looks. The man on the screen was on his back, mouth completely open, jaw dropped further than seems normal, neck strained slightly backward. The sound coming out of him, even through a phone speaker, was not something I would have described as snoring if I hadn't been told that's what it was.</p>
+
+<p>I watched it once and then I watched it again.</p>
+
+<p>She didn't say anything. She didn't need to. The video had already said everything she'd been trying to say for years and hadn't been able to say in a way that made me actually hear it.</p>
+
+<p>I handed her the phone back and sat there for a long time not speaking.</p>
+
+<div class="pull-quote"><p>"She had been recording it for three weeks before she showed me. Building up a folder of evidence because she knew I wouldn't believe the description in words."</p></div>
+
+<h2>The part I've never said out loud</h2>
+
+<p>The first thing I felt was disbelief.</p>
+
+<p>Not denial — I was looking at the video on her phone and I couldn't deny what was on it. Just the specific disbelief of seeing something about yourself that completely contradicts the version of yourself you have been carrying around for years. The person on that screen and the person who had been waking up every morning feeling fine were supposed to be the same person and they weren't and I didn't know what to do with that gap.</p>
+
+<p>The second thing I felt was something closer to shame.</p>
+
+<p>Because she had been lying next to that every single night. For years. Lying next to that sound and that open mouth and whatever it looked like from her side of the bed and waking up every morning next to me while I said I feel fine, slept great, how about you, and she said fine too and neither of us was being fully honest.</p>
+
+<p>She had been watching me sleep like that for years and she had stayed. That landed harder than the video had.</p>
+
+<p>The third thing I felt was the specific anger of a person who has just understood that they had information available to them for a long time and chose comfort over looking at it. She had told me. I had chosen not to hear it. That was not her failure.</p>
+
+<img src="outputs/kie/2026-04-29/snorestop-adv8/20260429-022018_03_ultra-realistic-iphone-15-pro-rear-camera-photo_1.png" alt="Story image 3" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
+
+<h2>What I started reading that morning</h2>
+
+<p>I went looking with a different energy than I had ever brought to this before.</p>
+
+<p>Before that morning I had been a person who thought his snoring was a minor inconvenience that didn't require urgent attention. After that morning I was a person who had seen what his snoring actually looked like and understood for the first time that fine every morning was not the same as nothing is wrong.</p>
+
+<p>I read about what the snoring actually is. Not the polite version I'd been telling myself for years but the actual mechanism. Soft tissue at the back of the throat relaxing during sleep and partially blocking the airway and vibrating as air tries to move through. When it gets bad enough the airway doesn't just partially block. It closes. The breathing stops. The body jolts back. The person sleeping feels nothing because they are unconscious and their body is running the emergency response without their knowledge or participation.</p>
+
+<p>I had felt completely fine every morning because I was asleep for all of it.</p>
+
+<p>Fine in the morning means nothing about what happens in the night. I understood that now in a way I had not understood it before the video and could not un-understand it after.</p>
+
+<p>I kept reading. I read about what this does over years. What builds quietly in a body that goes through this every night while the person sleeping feels fine and dismisses their wife's concern and buys strips that don't really work and goes back to sleep.</p>
+
+<p>I was not comfortable by the end of that morning. But I was finally paying attention.</p>
+
+<img src="outputs/kie/2026-04-29/snorestop-adv8/20260429-022105_04_ultra-realistic-iphone-15-pro-rear-camera-photo_1.png" alt="Story image 4" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
+
+<h2>What I found</h2>
+
+<p>I expected the answer to be complicated.</p>
+
+<p>Sleep study. Machine. Device. Something that matched the seriousness of what I had spent the morning reading about. I had moved past the point of wanting something easy and had mentally prepared myself for whatever the real answer was going to cost.</p>
+
+<p>What I actually found reframed everything.</p>
+
+<p>The snoring is a throat problem. Not a nose problem, not a position problem, not exclusively a weight problem. The sound comes from soft tissue at the back of the throat relaxing during sleep and vibrating as air moves through the restricted airway. The fix that works on that specific problem works on the throat tissue directly.</p>
+
+<p>There is a natural throat spray that coats the soft palate and throat, temporarily firming the tissue, reducing the vibration that creates the sound, helping keep the airway open enough that the stopping doesn't happen. It has been in pharmacies since 1995, thirty years, used by over 250,000 people. No prescription, no machine, no mask, no hose, no device, nothing to charge or clean or strap to your face.</p>
+
+<p>Two seconds before bed.</p>
+
+<p>I sat there reading it and rereading it and thinking about the video on her phone and feeling furious at the gap between those two things. Not at her. Not at anyone specific. Just at the gap. At the years I had spent feeling fine while something that had a two second fix had been quietly doing whatever it had been doing in the dark.</p>
+
+<p>I ordered it before I finished reading the page.</p>
+
+<img src="outputs/kie/2026-04-29/snorestop-adv8/20260429-022148_05_ultra-realistic-iphone-15-pro-rear-camera-photo_1.png" alt="Story image 5" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
+
+<div class="section-divider">Why It Works</div>
+
+<h2>Why it actually works when everything else doesn't</h2>
+
+<p>Most snoring products fail because they work around the problem rather than at it.</p>
+
+<p>Nasal strips open the nasal passage. Chin straps reposition the jaw. Positional pillows keep you off your back. White noise machines make the sound more bearable for the person lying next to it. All of these address the symptoms or the experience of the snoring without touching the actual source of it.</p>
+
+<p>The source is the soft tissue at the back of the throat.</p>
+
+<p>When that tissue relaxes enough during sleep to partially block the airway it vibrates as air moves through. That vibration is the snoring. When the blockage gets severe enough the airway closes completely. That is the stopping. The body jolts back. The cycle repeats dozens of times a night while the person sleeping feels nothing and wakes up every morning feeling fine.</p>
+
+<p>SnoreStop throat spray works directly on that tissue. The natural formula coats the soft palate and throat, temporarily firming the tissue, reducing the vibration, keeping the airway open enough that the sound doesn't have the conditions it needs to happen.</p>
+
+<p>Thirty years in pharmacies. Over 250,000 people. Not new. Not experimental. A product that has existed since 1995 and continued to exist because it works on the actual source of the problem consistently enough that people keep using it and keep telling other people about it.</p>
+
+<p>Two seconds before bed. That is the entire compliance requirement.</p>
+
+<img src="outputs/kie/2026-04-29/snorestop-adv8/20260429-022225_06_ultra-realistic-iphone-15-pro-rear-camera-photo_1.png" alt="Story image 6" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
+
+<img src="outputs/kie/2026-04-29/snorestop-adv8/20260429-022316_07_attach-snorestop-product-image-before-generating_1.png" alt="Story image 7" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
+
+<table class="price-table">
+  <thead><tr><th>Option</th><th>Cost</th><th>What it involves</th></tr></thead>
+  <tbody>
+    <tr><td>Sleep study + CPAP</td><td>$1,000–$3,500</td><td>Machine, mask, hose, nightly setup</td></tr>
+    <tr><td>Dental MAD device</td><td>$1,500–$4,500</td><td>Custom fitting, multiple appointments</td></tr>
+    <tr><td>Surgical options</td><td>$4,000–$6,000+</td><td>Recovery time, risk, no guarantee</td></tr>
+    <tr class="winner"><td>SnoreStop throat spray</td><td>Under $50</td><td>Two seconds before bed</td></tr>
+  </tbody>
+</table>
+
+<img src="outputs/kie/2026-04-29/snorestop-adv8/20260429-022404_08_ultra-realistic-iphone-15-pro-rear-camera-photo_1.png" alt="Story image 8" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
+
+<div class="reviews-wrap">
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">"My husband had no idea how bad his snoring was until I showed him the recording I'd been keeping on my phone. He ordered this the same day. Six months later I sleep through the night every night. He does too."</p>
+    <div class="review-author">Cecile R. — Washington</div>
+  </div>
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">"I was the guy who felt fine every morning and dismissed my wife's concern for years. She showed me a video. I ordered this that afternoon. Three weeks in she told me she'd stopped dreading bedtime. That's the whole review."</p>
+    <div class="review-author">James M. — Oregon</div>
+  </div>
+  <div class="review-card">
+    <div class="review-stars">★★★★★</div>
+    <p class="review-text">"Four years of telling him. Four years of fine. One video and suddenly he was ready to do something about it. Seven months later there's nothing left to think about because there's nothing left to fix."</p>
+    <div class="review-author">Wren B. — Minnesota</div>
+  </div>
+</div>
+
+<img src="outputs/kie/2026-04-29/snorestop-adv8/20260429-022456_09_ultra-realistic-iphone-15-pro-rear-camera-photo_1.png" alt="Story image 9" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
+
+<div class="cta-wrap">
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability Now ❯</a>
+  <div class="trust-signals">
+    <span class="trust-item">Natural formula</span>
+    <span class="trust-item">No prescription needed</span>
+    <span class="trust-item">30-day money back guarantee</span>
+    <span class="trust-item">Under $50</span>
+  </div>
+</div>
+
+<div class="section-divider">Eight Months Later</div>
+
+<h2>Eight months later</h2>
+
+<p>She deleted the folder.</p>
+
+<p>I found out by accident. I asked her a few weeks ago if she still had the videos and she thought about it for a second and said she'd deleted them sometime around month two because she didn't need them anymore and hadn't thought about them since.</p>
+
+<p>I thought about that for a while after she said it.</p>
+
+<p>She had kept that folder for three weeks before she showed me. Evidence of something she'd been trying to tell me for years that she hadn't been able to make me hear in words. She'd built it carefully and shown it to me at exactly the right moment and then two months after I'd finally done something about it she'd deleted it without ceremony because the problem it documented no longer existed and the folder had no purpose anymore.</p>
+
+<p>Eight months later she sleeps like she used to sleep before my snoring got bad enough to matter. Deeply. Fully. Through the night. She doesn't mention the snoring anymore because there isn't anything to mention. She doesn't record anything at night because there isn't anything worth recording.</p>
+
+<p>I still think about the video sometimes. The grey grainy night vision. The open mouth. The sound through the phone speaker. The specific experience of watching yourself and not recognizing what you're watching.</p>
+
+<p>I'm glad she recorded it. I'm glad she showed it to me. I'm angry it took a video to make me hear what she'd been saying for years. I can't do anything about the years before the video. I can do something about the years after it, which is what I've been doing, and what I'm still doing, one two second spray before bed at a time.</p>
+
+<img src="outputs/kie/2026-04-29/snorestop-adv8/20260429-022544_10_ultra-realistic-iphone-15-pro-rear-camera-photo_1.png" alt="Story image 10" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
+
+<img src="outputs/kie/2026-04-29/snorestop-adv8/20260429-022627_11_ultra-realistic-iphone-15-pro-rear-camera-photo_1.png" alt="Story image 11" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
+
+<h2>The part that made me pull the trigger</h2>
+
+<p>When I found SnoreStop I almost kept looking because the simplicity seemed wrong after the morning I had just been through.</p>
+
+<p>What made me actually order it was the guarantee.</p>
+
+<p>Thirty days. Full refund. No questions asked, no justification required, no explanation needed. You try it for thirty days and if the snoring doesn't improve you get every dollar back.</p>
+
+<p>After the video and the morning of reading I was not in a position to argue with a guarantee like that. The math was simple. Either the snoring stops and the video becomes something she can delete because it no longer documents anything real. Or it doesn't work and it costs nothing.</p>
+
+<p>There is no version of that math that goes wrong. I ordered it before I could find a reason not to.</p>
+
+<div class="guarantee-box">
+  <h3>🟢 The SnoreStop 30-Day Guarantee</h3>
+  <p>Try it for a full 30 days. If the snoring doesn't improve contact them for a complete refund. No questions. No justification required. No process to navigate.</p>
+  <p class="g-statement">"Either the snoring stops, or your money comes back. Those are the only two outcomes. Mathematically impossible to lose."</p>
+</div>
+
+<h2>Why I'm writing this</h2>
+
+<p>I'm writing this because of the video.</p>
+
+<p>Because of what it felt like to watch forty seconds of footage of myself and understand for the first time what fine every morning had actually been covering up. Because of the years my wife had spent lying next to something she couldn't make me take seriously in words. Because of the folder she built for three weeks before she finally showed it to me and the fact that she felt she needed to build a folder at all.</p>
+
+<p>If you snore and you feel fine every morning, the feeling fine is not evidence that nothing is wrong. It is evidence that you are asleep while something is wrong and your body is handling it without your knowledge and the person lying next to you is not asleep and is not fine and has probably stopped saying so because saying so stopped producing results.</p>
+
+<p>The fix exists. It is simple, it has been around for thirty years, it costs less than the problem is costing the person lying next to you every single night, and there is a guarantee that means trying it costs you nothing if it doesn't work.</p>
+
+<p>Read what's below. Then do something about it tonight before she picks up her phone again.</p>
+
+<div class="cta-wrap">
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability Now ❯</a>
+  <div class="trust-signals">
+    <span class="trust-item">Natural formula</span>
+    <span class="trust-item">No prescription needed</span>
+    <span class="trust-item">30-day money back guarantee</span>
+    <span class="trust-item">Under $50</span>
+  </div>
+</div>
+
+<div class="comments-section">
+  <div class="comments-title">Comments</div>
+
+  <div class="comment">
+    <div class="comment-header"><div class="comment-avatar">GT</div><div class="comment-name">Gwen T.</div><div class="comment-time">1h ago</div></div>
+    <div class="comment-text">i have a folder on my phone right now. three weeks of recordings. haven't shown him yet because i don't know how he's going to react. sending him this instead</div>
+    <div class="comment-likes">👍 64</div>
+    <div class="comment-reply">
+      <div class="comment-header"><div class="comment-avatar">MD</div><div class="comment-name">Mark D.</div><div class="comment-time">45m ago</div></div>
+      <div class="comment-text">show him the folder. the video says what words can't. he needs to see it</div>
+    </div>
+  </div>
+
+  <div class="comment">
+    <div class="comment-header"><div class="comment-avatar">RM</div><div class="comment-name">Rafferty M.</div><div class="comment-time">2h ago</div></div>
+    <div class="comment-text">felt completely fine every morning. that sentence is doing something to me right now. sending this to myself to read again later when i'm not at work</div>
+    <div class="comment-likes">👍 77</div>
+    <div class="comment-reply">
+      <div class="comment-header"><div class="comment-avatar">MD</div><div class="comment-name">Mark D.</div><div class="comment-time">1h ago</div></div>
+      <div class="comment-text">read it properly when you get home. then do something about it tonight</div>
+    </div>
+  </div>
+
+  <div class="comment">
+    <div class="comment-header"><div class="comment-avatar">CB</div><div class="comment-name">Cecile B.</div><div class="comment-time">3h ago</div></div>
+    <div class="comment-text">the part about her staying even after seeing that every night for years. i felt that. i really felt that</div>
+    <div class="comment-likes">👍 88</div>
+    <div class="comment-reply">
+      <div class="comment-header"><div class="comment-avatar">WP</div><div class="comment-name">Wren P.</div><div class="comment-time">2h ago</div></div>
+      <div class="comment-text">same. that's the part that got me</div>
+    </div>
+  </div>
+
+  <div class="comment">
+    <div class="comment-header"><div class="comment-avatar">OR</div><div class="comment-name">Odette R.</div><div class="comment-time">4h ago</div></div>
+    <div class="comment-text">my husband watched his own video three weeks ago and ordered this the same day. he's used it every night since. i slept through last night for the first time in four years. four years.</div>
+    <div class="comment-likes">👍 97</div>
+    <div class="comment-reply">
+      <div class="comment-header"><div class="comment-avatar">MD</div><div class="comment-name">Mark D.</div><div class="comment-time">3h ago</div></div>
+      <div class="comment-text">four years. i'm glad she showed him. i'm glad he watched it properly</div>
+    </div>
+  </div>
+
+  <div class="comment">
+    <div class="comment-header"><div class="comment-avatar">BK</div><div class="comment-name">Bram K.</div><div class="comment-time">3h ago</div></div>
+    <div class="comment-text">the gap between what the video showed and what feeling fine every morning felt like. that gap is the whole problem and nobody talks about it that clearly</div>
+    <div class="comment-likes">👍 71</div>
+  </div>
+
+  <div class="comment">
+    <div class="comment-header"><div class="comment-avatar">IR</div><div class="comment-name">Isla R.</div><div class="comment-time">5h ago</div></div>
+    <div class="comment-text">she deleted the folder. that detail at the end. i'm not okay. ordering this right now for my husband</div>
+    <div class="comment-likes">👍 83</div>
+    <div class="comment-reply">
+      <div class="comment-header"><div class="comment-avatar">IR</div><div class="comment-name">Isla R.</div><div class="comment-time">2 weeks later</div></div>
+      <div class="comment-text">reporting back. deleted my folder this morning. didn't plan to. just realized i didn't need it anymore.</div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <p>This is an advertorial. The Lived Truth — Real stories. Real lives.</p>
+  <p style="margin-top:8px;"><a href="#">Privacy Policy</a> · <a href="#">Terms</a> · <a href="#">Disclaimer</a></p>
+  <p style="margin-top:8px;">© 2025 thelivedtruth.org · Individual results may vary.</p>
+</footer>
+
+<script>
+const progressBar = document.getElementById('progress-bar');
+const readIndicator = document.getElementById('reading-indicator');
+const readPct = document.getElementById('read-pct');
+const stickyCTA = document.getElementById('sticky-cta');
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = Math.min(100, Math.round((scrollTop / docHeight) * 100));
+  progressBar.style.width = pct + '%';
+  readPct.textContent = pct + '% read';
+  if (pct > 5) readIndicator.classList.add('visible');
+  else readIndicator.classList.remove('visible');
+  if (pct >= 65) stickyCTA.classList.add('visible');
+});
+</script>
+</body>
+</html>

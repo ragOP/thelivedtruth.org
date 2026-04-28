@@ -36,6 +36,11 @@ def parse_args() -> argparse.Namespace:
         help="Replace matched placeholder blocks in --html-file with generated <img> tags.",
     )
     parser.add_argument(
+        "--reference-image",
+        default="refrence.webp",
+        help="Reference image path used when prompt asks to attach a product image.",
+    )
+    parser.add_argument(
         "--prompts-file",
         help="Text file with one prompt per line. Lines starting with # are ignored.",
     )
@@ -321,6 +326,8 @@ def run_prompt(
     output_root: Path,
     prompt_index: int,
 ) -> list[Path]:
+    marker_prompt = prompt.lower()
+    wants_reference = "[attach snorestop product image before generating]" in marker_prompt
     payload = {
         "model": args.model,
         "input": {
@@ -330,6 +337,21 @@ def run_prompt(
             "output_format": args.output_format,
         },
     }
+    if wants_reference and args.reference_image:
+        ref_value = args.reference_image.strip()
+        if ref_value.startswith(("http://", "https://")):
+            payload["input"]["image_input"] = [ref_value]
+        elif Path(ref_value).exists():
+            print(
+                f"[{prompt_index}] warning: local reference image '{ref_value}' cannot be sent directly; "
+                "Kie expects a public URL for image_input. Proceeding without image_input.",
+                file=sys.stderr,
+            )
+        else:
+            print(
+                f"[{prompt_index}] warning: reference image not found: {args.reference_image}",
+                file=sys.stderr,
+            )
     create_response = request_json(CREATE_TASK_URL, api_key, payload)
     task_id = extract_task_id(create_response)
     print(f"[{prompt_index}] task created: {task_id}")
