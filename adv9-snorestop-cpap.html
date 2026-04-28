@@ -21,13 +21,13 @@ body{font-family:'Inter',sans-serif;font-size:17px;line-height:1.78;color:var(--
 #sticky-cta a::before{content:"";position:absolute;top:0;left:-75%;width:42%;height:100%;background:linear-gradient(110deg,rgba(255,255,255,0),rgba(255,255,255,.35),rgba(255,255,255,0));transform:skewX(-20deg);animation:cta-shimmer 4.4s ease-in-out infinite;pointer-events:none}
 #sticky-cta a:hover{background:#1d4ed8}
 #sticky-cta a:active{transform:scale(.99)}
-.site-header{border-bottom:1px solid var(--border);padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+.site-header{border-bottom:1px solid var(--border);padding-block:14px;padding-inline:16px;display:flex;justify-content:space-between;align-items:center}
 .site-logo{font-family:'Lora',serif;font-size:20px;font-weight:600;color:var(--body);text-decoration:none}
 .site-logo span{font-size:11px;font-weight:400;font-family:'Inter',sans-serif;color:var(--muted);display:block;letter-spacing:.05em;text-transform:uppercase}
 .advertorial-label{font-size:11px;color:var(--muted);font-family:'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--border);padding:4px 10px;border-radius:3px}
-.content-wrap{max-width:680px;margin:0 auto;padding:0 20px 100px}
+.content-wrap{width:min(100%,680px);margin:0 auto;padding-inline:16px;padding-bottom:100px}
 .category-tag{display:inline-block;font-size:11px;font-family:'Inter',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:32px 0 16px}
-h1{font-family:'Lora',serif;font-size:32px;font-weight:600;line-height:1.22;color:var(--body);margin-bottom:8px}
+h1{font-family:'Lora',serif;font-size:28px;font-weight:600;line-height:1.22;color:var(--body);margin-bottom:8px}
 h1 .bracket{font-style:italic;color:var(--blue)}
 .author-row{display:flex;align-items:center;gap:12px;margin:20px 0 24px;padding-bottom:20px;border-bottom:1px solid var(--border)}
 .author-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#f7971e,#ffd200);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:16px;flex-shrink:0}
@@ -36,7 +36,7 @@ h1 .bracket{font-style:italic;color:var(--blue)}
 .author-detail{font-size:12px;color:var(--muted);margin-top:1px}
 .verified-badge{font-size:11px;background:var(--green-light);color:var(--green);padding:3px 8px;border-radius:3px;font-weight:500;white-space:nowrap}
 .img-placeholder{width:100%;background:var(--bg2);border:1px dashed var(--border);border-radius:4px;color:var(--muted);font-size:12px;font-family:'Inter',sans-serif;padding:24px 20px;margin:28px 0;line-height:1.6;white-space:pre-wrap;word-break:break-word}
-p{margin-bottom:20px;color:var(--body)}
+p{margin-bottom:20px;color:var(--body);font-size:18px;line-height:1.78}
 h2{font-family:'Lora',serif;font-size:24px;font-weight:600;color:var(--body);margin-top:44px;margin-bottom:16px;line-height:1.3}
 .pull-quote{border-left:3px solid var(--blue);margin:36px 0;padding:4px 0 4px 24px}
 .pull-quote p{font-family:'Lora',serif;font-size:20px;font-style:italic;color:var(--blue);line-height:1.5;margin:0}
@@ -79,7 +79,7 @@ h2{font-family:'Lora',serif;font-size:24px;font-weight:600;color:var(--body);mar
 .comment-reply .comment-text{padding-left:44px;font-size:14px}
 .site-footer{border-top:1px solid var(--border);padding:32px 20px;margin-top:60px;text-align:center;font-size:12px;color:var(--muted);line-height:1.7}
 .site-footer a{color:var(--muted);text-decoration:underline}
-@media(max-width:680px){h1{font-size:26px}h2{font-size:21px}.pull-quote p{font-size:18px}.trust-signals{justify-content:flex-start}}
+@media(max-width:680px){.content-wrap{padding-inline:16px;padding-bottom:100px}h1{font-size:28px}h2{font-size:21px}.pull-quote p{font-size:18px}.trust-signals{justify-content:flex-start}}
 </style>
 </head>
 <body>
@@ -108,8 +108,7 @@ h2{font-family:'Lora',serif;font-size:24px;font-weight:600;color:var(--body);mar
   <span class="verified-badge">✓ Verified</span>
 </div>
 
-<div class="img-placeholder">NANO BANANA PRO — 1280×720px
-Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no frame, fills entire frame edge to edge. Extreme close-up of a phone screen completely filling the frame, showing a real Google search interface. The search bar at the top is active and shows the current search being typed: "can years of snoring cause permanent damage" — this is what the eyes land on first. Below it the recent search history stacked naturally in chronological order, most recent at top: "sleep apnea because of snoring" / "snoring and heart attack connection" / "why do i stop breathing when i snore" / "is loud snoring dangerous long term" / "why am i so tired after full night sleep" / "loud snoring causes". The searches read exactly like a real man's evening — starting mild, getting progressively more scared. The phone is being held in a man's slightly tense hand in complete darkness, the glow casting faint light across his fingers. iPhone 15 Pro Night Mode, natural grain, phone screen as only light source, near total darkness everywhere else, cool blue-grey tones. Real, not staged, not styled, not a stock photo.</div>
+<img src="outputs/kie/2026-04-29/snorestop-adv9/20260429-031909_01.png" alt="Story image 1" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
 
 <p>My snoring had gotten bad enough that my wife had moved to the spare room.</p>
 
@@ -133,8 +132,7 @@ Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no 
 
 <p>Not because I wasn't trying. Because there is something that happens to you when something airtight is strapped across your face in a dark room and you try to tell your brain to relax and go to sleep. Your brain does not relax. Your brain starts looking for the exits.</p>
 
-<div class="img-placeholder">NANO BANANA PRO — 1280×720px
-Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no frame, fills entire frame edge to edge. Extreme close-up of a phone screen showing Google search interface. Search bar reads: "my wife says i stop breathing when i snore" — typed the way a real person types, conversational, no punctuation. Below it recent search history: "snoring worse after 40" / "why is my snoring getting louder" / "health risks of chronic snoring" / "sleep apnea diagnosis without doctor" / "untreated sleep apnea life expectancy" / "sleep apnea heart disease risk men". Phone held in man's hand in complete darkness, screen glow only light source. iPhone 15 Pro Night Mode, natural grain, cool blue-grey tones, near total darkness. Real, not staged, not styled, not a stock photo.</div>
+<img src="outputs/kie/2026-04-29/snorestop-adv9/20260429-031912_02.png" alt="Story image 2" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
 
 <h2>Six weeks of trying</h2>
 
@@ -162,8 +160,7 @@ Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no 
 
 <p>I started looking for something else not because I gave up on fixing the snoring. Because I couldn't look at that version of the future and accept it without first knowing whether another option existed.</p>
 
-<div class="img-placeholder">NANO BANANA PRO — 1280×720px
-Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no frame, fills entire frame edge to edge. A man lying on his back in a dark bedroom, eyes wide open staring at the ceiling. His wife is asleep beside him, completely unaware. He is not moving. He is listening to himself breathe for the first time in his life and he is not sure what he is listening for. Near total darkness, only faint ambient light from a window or streetlight outside, cool blue-grey tones. iPhone 15 Pro Night Mode, natural grain, very slight underexposure. Real, not staged, not styled, not a stock photo.</div>
+<img src="outputs/kie/2026-04-29/snorestop-adv9/20260429-031905_03.png" alt="Story image 3" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
 
 <h2>What I found</h2>
 
@@ -183,8 +180,7 @@ Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no 
 
 <p>I ordered it that night. I was furious at how simple it was. I am still a little furious.</p>
 
-<div class="img-placeholder">NANO BANANA PRO — 1280×720px
-Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no frame, fills entire frame edge to edge. A man at a desk in morning light, laptop open in front of him, phone in his right hand, reading something on the phone intently. Coffee mug beside him, slightly cold. Wedding ring visible. The posture of someone who started with one question and has now found something that has changed the direction of the whole morning. iPhone 15 Pro natural indoor morning light, warm tones, natural grain. Real, not staged, not styled, not a stock photo.</div>
+<img src="outputs/kie/2026-04-29/snorestop-adv9/20260429-031910_04.png" alt="Story image 4" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
 
 <div class="section-divider">Why It Works</div>
 
@@ -200,11 +196,9 @@ Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no 
 
 <p>Thirty years in pharmacies. Over 250,000 people. Not new. Not experimental. A product that has existed since 1995 and continued to exist because it works consistently enough that people keep using it.</p>
 
-<div class="img-placeholder">NANO BANANA PRO — 1280×720px
-Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no frame, fills entire frame edge to edge. A man's face barely lit from below by a phone screen in a dim room. His expression is specific and quiet — not relief exactly, more like the specific look of someone who has spent hours reading frightening things and has just found something that cuts the other way entirely. Eyes fixed on the screen, completely still. Phone screen as only light source, near total darkness. iPhone 15 Pro Night Mode, natural grain, cool blue-grey tones. Real, not staged, not styled, not a stock photo.</div>
+<img src="outputs/kie/2026-04-29/snorestop-adv9/20260429-031912_05.png" alt="Story image 5" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
 
-<div class="img-placeholder">NANO BANANA PRO — 1280×720px
-Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no frame, fills entire frame edge to edge. Close-up shot of a printed medical diagram page lying on a white desk in warm indoor light. The diagram shows a simple cross-section illustration of the human throat and airway during sleep — soft tissue at the back of the throat, the airway shown as a narrow passage, simple anatomical labels. The page looks like it was printed from a health website, slightly curved at the edges, matte paper. A hand with a wedding ring visible at the bottom edge of the frame. iPhone 15 Pro natural indoor warm lamp light, natural grain, shallow depth of field. Real, not staged, not styled, not a stock photo.</div>
+<img src="outputs/kie/2026-04-29/snorestop-adv9/20260429-031912_06.png" alt="Story image 6" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
 
 <table class="price-table">
   <thead><tr><th>Option</th><th>Cost</th><th>What it involves</th></tr></thead>
@@ -216,8 +210,7 @@ Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no 
   </tbody>
 </table>
 
-<div class="img-placeholder">NANO BANANA PRO — 1280×720px
-[ATTACH SNORESTOP PRODUCT IMAGE BEFORE GENERATING] Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no frame, fills entire frame edge to edge. The SnoreStop throat spray bottle sitting naturally on a real wooden nightstand in warm bedroom lamp light. A glass of water beside it. Nothing else styled or arranged. Shot from slightly above at a natural angle. iPhone 15 Pro natural indoor warm light, natural grain, shallow depth of field. Real, not staged, not styled, not a stock photo.</div>
+<img src="outputs/kie/2026-04-29/snorestop-adv9/20260429-031901_07.png" alt="Story image 7" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
 
 <div class="reviews-wrap">
   <div class="review-card">
@@ -237,8 +230,7 @@ Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no 
   </div>
 </div>
 
-<div class="img-placeholder">NANO BANANA PRO — 1280×720px
-Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no frame, fills entire frame edge to edge. Close-up of a phone screen being held in a woman's hand, the screen displaying a simple notes app comparison list. SnoreStop at the top with checkmarks — under $50, no prescription, no device, money back guarantee. Below it CPAP and Dental device with dollar signs and X marks. Casual formatting, looks like something typed during late-night research, not a designed infographic. Screen clearly lit and readable. iPhone 15 Pro natural indoor light, natural grain. Real, not staged, not styled, not a stock photo.</div>
+<img src="outputs/kie/2026-04-29/snorestop-adv9/20260429-031909_08.png" alt="Story image 8" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
 
 <div class="cta-wrap">
   <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability Now ❯</a>
@@ -266,11 +258,9 @@ Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no 
 
 <p>The CPAP is in a box in the closet. I haven't opened it in seven months. I don't intend to.</p>
 
-<div class="img-placeholder">NANO BANANA PRO — 1280×720px
-Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no frame, fills entire frame edge to edge. A phone screen held in a woman's hand showing a product review page. 3-4 five-star customer reviews stacked vertically — each has star rating, reviewer first name and state, 2-3 sentences of specific review text about improved sleep and snoring. Phone screen bright and clearly visible. Shot in warm indoor light, background softly blurred. iPhone 15 Pro natural indoor light, natural grain. Real, not staged, not styled, not a stock photo.</div>
+<img src="outputs/kie/2026-04-29/snorestop-adv9/20260429-031912_09.png" alt="Story image 9" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
 
-<div class="img-placeholder">NANO BANANA PRO — 1280×720px
-Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no frame, fills entire frame edge to edge. A phone screen resting on a white bedside table showing a sleep tracking app open to a weekly summary view. One section with severely fragmented jagged broken sleep bars in grey/red showing low sleep quality score. Another section with smooth solid continuous bars in green/blue showing high sleep quality score. Dramatic difference visible immediately at a glance. Soft morning bedroom lamp light. iPhone 15 Pro natural indoor light, natural grain, realistic phone screen glow. Real, not staged, not styled, not a stock photo.</div>
+<img src="outputs/kie/2026-04-29/snorestop-adv9/20260429-031910_10.png" alt="Story image 10" style="width:100%;height:auto;border-radius:4px;margin:28px 0;display:block;" loading="lazy">
 
 <h2>The part that made me pull the trigger</h2>
 
