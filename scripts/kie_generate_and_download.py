@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import json
 import os
 import re
@@ -37,8 +38,14 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--reference-image",
-        default="refrence.webp",
+        default="ref.webp",
         help="Reference image path used when prompt asks to attach a product image.",
+    )
+    parser.add_argument(
+        "--parallel",
+        type=int,
+        default=4,
+        help="Number of prompts to process in parallel (default: 4).",
     )
     parser.add_argument(
         "--prompts-file",
@@ -404,21 +411,34 @@ def main() -> int:
     output_root.mkdir(parents=True, exist_ok=True)
 
     failures = 0
-    downloaded_images: list[Path] = []
+    downloaded_by_prompt: dict[int, list[Path]] = {}
+    workers = max(1, args.parallel)
     for idx, prompt in enumerate(prompts, start=1):
-        print(f"[{idx}] generating: {prompt[:80]}{'...' if len(prompt) > 80 else ''}")
-        try:
-            downloaded = run_prompt(
+        print(f"[{idx}] queued: {prompt[:80]}{'...' if len(prompt) > 80 else ''}")
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
+        future_map = {
+            executor.submit(
+                run_prompt,
                 api_key=api_key,
                 prompt=prompt,
                 args=args,
                 output_root=output_root,
                 prompt_index=idx,
-            )
-            downloaded_images.extend(downloaded)
-        except Exception as exc:
-            failures += 1
-            print(f"[{idx}] error: {exc}", file=sys.stderr)
+            ): idx
+            for idx, prompt in enumerate(prompts, start=1)
+        }
+        for future in concurrent.futures.as_completed(future_map):
+            idx = future_map[future]
+            try:
+                downloaded_by_prompt[idx] = future.result()
+            except Exception as exc:
+                failures += 1
+                print(f"[{idx}] error: {exc}", file=sys.stderr)
+
+    downloaded_images: list[Path] = []
+    for idx in range(1, len(prompts) + 1):
+        downloaded_images.extend(downloaded_by_prompt.get(idx, []))
 
     if args.apply_html and args.html_file and failures == 0:
         try:
