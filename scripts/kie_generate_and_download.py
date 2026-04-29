@@ -327,7 +327,7 @@ def run_prompt(
     prompt_index: int,
 ) -> list[Path]:
     marker_prompt = prompt.lower()
-    wants_reference = "[attach snorestop product image before generating]" in marker_prompt
+    wants_reference = "[attach snorestop product image before generating]" in marker_prompt or "[attach ref.webp before generating]" in marker_prompt
     payload = {
         "model": args.model,
         "input": {
