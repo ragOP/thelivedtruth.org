@@ -149,6 +149,22 @@ img.story-img{border-radius:10px;margin:28px 0;box-shadow:none;border:1px solid 
   img.story-img{margin:22px 0;border-radius:10px}
 }
 
+/* Mobile stability lock: prevent legacy rule bleed-through */
+.site-header{padding:14px 20px!important}
+.content-wrap{padding:0 20px 48px!important}
+.author-row{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important}
+.author-top{display:flex!important;align-items:center!important;min-width:0!important;flex:1!important}
+.verified-badge{white-space:nowrap!important;margin-top:0!important;flex-shrink:0!important}
+img.story-img{display:block!important;width:100%!important;height:auto!important;margin:28px 0!important;border-radius:10px!important}
+.site-footer{padding:20px 20px 40px!important}
+@media(max-width:680px){
+  .content-wrap{padding:0 16px 48px!important}
+  h1{font-size:28px!important;line-height:1.25!important}
+  h2{font-size:22px!important;line-height:1.3!important}
+  p{font-size:18px!important;line-height:1.78!important}
+  img.story-img{margin:22px 0!important}
+}
+
 </style>
 </head>
 <body>
