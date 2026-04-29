@@ -26,8 +26,8 @@
   --avatar-bg:#dbeafe;
   --avatar-text:#1d4ed8;
 }
-html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:18px;line-height:1.7;color:var(--body);background:var(--bg);-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:18px;line-height:1.7;color:var(--body);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 
 
 .site-header{border-bottom:1px solid var(--border);padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
@@ -95,12 +95,15 @@ p strong{font-weight:700;color:var(--body)}
 .comment-likes{font-size:13px;color:var(--muted);margin-top:8px;padding-left:48px}
 .comment-reply{margin-top:18px;margin-left:48px;padding-left:18px;border-left:2px solid var(--border-light)}
 .comment-reply .comment-text{padding-left:48px;font-size:15px}
+.content-wrap,.comments-section,.comment,.comment-text,.comment-reply{max-width:100%}
+.comment-text,.review-text,p,h1,h2{overflow-wrap:anywhere;word-break:break-word}
 
 .site-footer{padding:20px 20px 40px;font-size:15px;color:var(--body);line-height:1.8}
 .site-footer a{color:#0000EE;text-decoration:underline}
 .site-footer p{margin-bottom:8px}
 
 @media(max-width:680px){
+  .price-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
   .author-row{flex-wrap:nowrap;align-items:center}
   .author-top{min-width:0}
   .verified-badge{white-space:nowrap}
