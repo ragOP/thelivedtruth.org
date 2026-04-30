@@ -26,9 +26,11 @@
   --avatar-bg:#dbeafe;
   --avatar-text:#1d4ed8;
 }
-html{scroll-behavior:smooth;overflow-x:hidden}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:18px;line-height:1.7;color:var(--body);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:18px;line-height:1.7;color:var(--body);background:var(--bg);-webkit-font-smoothing:antialiased}
 
+.top-cta-bar{background:var(--bg);padding:12px 16px;border-bottom:1px solid var(--border);text-align:center}
+.top-cta-bar a{display:inline-block;background:var(--green);color:#fff;text-decoration:none;padding:14px 28px;border-radius:8px;font-size:16px;font-weight:700;width:100%;max-width:560px;box-shadow:0 2px 6px rgba(22,163,74,.25)}
 
 .site-header{border-bottom:1px solid var(--border);padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
 .site-logo{font-size:20px;font-weight:700;color:var(--body);text-decoration:none}
@@ -41,13 +43,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubunt
 h1{font-size:36px;font-weight:800;line-height:1.18;color:var(--body);margin-bottom:24px;letter-spacing:-0.02em}
 h1 .bracket{color:var(--blue);font-weight:800}
 
-.author-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:24px;border-bottom:1px solid var(--border)}
-.author-top{display:flex;align-items:center;gap:14px;min-width:0;flex:1}
+.author-row{margin:24px 0 32px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+.author-top{display:flex;align-items:flex-start;gap:14px}
 .author-avatar{width:48px;height:48px;border-radius:50%;background:var(--avatar-bg);display:flex;align-items:center;justify-content:center;color:var(--avatar-text);font-weight:700;font-size:15px;flex-shrink:0}
 .author-meta{flex:1}
 .author-name{font-size:16px;font-weight:600;color:var(--body);line-height:1.4}
 .author-detail{font-size:14px;color:var(--muted);margin-top:6px;line-height:1.5}
-.verified-badge{display:inline-flex;align-items:center;gap:6px;font-size:13px;background:var(--verified-bg);color:var(--verified-text);padding:6px 14px;border-radius:20px;font-weight:600;white-space:nowrap;flex-shrink:0;margin-top:0}
+.verified-badge{display:inline-flex;align-items:center;gap:6px;font-size:13px;background:var(--verified-bg);color:var(--verified-text);padding:6px 14px;border-radius:20px;font-weight:600;margin-top:14px}
 
 img.story-img{width:100%;border-radius:12px;display:block;margin:28px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
 
@@ -95,18 +97,12 @@ p strong{font-weight:700;color:var(--body)}
 .comment-likes{font-size:13px;color:var(--muted);margin-top:8px;padding-left:48px}
 .comment-reply{margin-top:18px;margin-left:48px;padding-left:18px;border-left:2px solid var(--border-light)}
 .comment-reply .comment-text{padding-left:48px;font-size:15px}
-.content-wrap,.comments-section,.comment,.comment-text,.comment-reply{max-width:100%}
-.comment-text,.review-text,p,h1,h2{overflow-wrap:anywhere;word-break:break-word}
 
-.site-footer{padding:20px 20px 40px;font-size:15px;color:var(--body);line-height:1.8}
+.site-footer{padding:40px 20px 60px;font-size:15px;color:var(--body);line-height:1.8}
 .site-footer a{color:#0000EE;text-decoration:underline}
 .site-footer p{margin-bottom:8px}
 
 @media(max-width:680px){
-  .price-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
-  .author-row{flex-wrap:nowrap;align-items:center}
-  .author-top{min-width:0}
-  .verified-badge{white-space:nowrap}
   h1{font-size:30px}
   h2{font-size:22px}
   body{font-size:17px}
@@ -116,50 +112,17 @@ p strong{font-weight:700;color:var(--body)}
   .guarantee-box h3{font-size:21px}
   .guarantee-inner p{font-size:16px}
 }
-
-/* Earlier-pages visual alignment */
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:17px;line-height:1.78}
-.site-header{background:#fff;border-bottom:2px solid #1a1a1a;padding:14px 20px;text-align:center;display:block}
-.site-header-inner{display:flex;align-items:center;justify-content:space-between;max-width:680px;margin:0 auto}
-.site-logo{font-size:21px;font-weight:700;color:#1a1a1a;letter-spacing:-0.02em;text-decoration:none}
-.advertorial-label{font-size:11px;font-weight:600;color:#888;letter-spacing:.12em;text-transform:uppercase;border:1px solid #ddd;padding:3px 10px;border-radius:3px}
-.content-wrap{max-width:680px;margin:0 auto;padding:0 20px 48px}
-.category-tag{font-size:8px;font-weight:700;letter-spacing:.12em;margin:32px 0 14px;display:block}
-h1{font-size:30px;font-weight:700;line-height:1.25;letter-spacing:-0.02em;margin-bottom:20px}
-h2{font-size:22px;font-weight:700;line-height:1.3;letter-spacing:-0.01em;margin:40px 0 16px}
-p{font-size:17px;line-height:1.78;margin-bottom:20px}
-img.story-img{border-radius:10px;margin:28px 0;box-shadow:none;border:1px solid #e5e5e5;background:#f7f7f7}
-.cta-wrap{text-align:center;margin:32px 0}
-.cta-btn{display:block;width:100%;background:#149312;color:#fff;font-size:22px;font-weight:700;text-align:center;text-decoration:none;padding:19px 28px;border-radius:6px;border:none;cursor:pointer;transition:background .2s,transform .1s;letter-spacing:.01em;line-height:1.3;position:relative;overflow:hidden;isolation:isolate;box-shadow:none}
-.cta-btn::before{content:"";position:absolute;top:0;left:-75%;width:42%;height:100%;background:linear-gradient(110deg,rgba(255,255,255,0),rgba(255,255,255,.35),rgba(255,255,255,0));transform:skewX(-20deg);animation:cta-shimmer 4.4s ease-in-out infinite;pointer-events:none}
-.cta-btn:hover{background:#1d4ed8}
-.cta-btn:active{transform:scale(.99)}
-@keyframes cta-shimmer{0%,80%{left:-75%}100%{left:130%}}
-.sticky-cta{position:fixed;bottom:14px;left:0;right:0;padding:0 16px;background:transparent;border-top:none;z-index:9999;transform:translateY(140%);transition:transform .35s cubic-bezier(.4,0,.2,1);pointer-events:none;text-align:center}
-.sticky-cta.show{transform:translateY(0)}
-.sticky-cta .cta-btn{width:100%;max-width:680px;margin:0 auto;display:block;font-size:22px;padding:19px 28px;border-radius:6px;box-shadow:0 10px 28px rgba(0,0,0,.2);pointer-events:auto}
-@media(max-width:520px){
-  h1{font-size:28px}
-  body{font-size:16px}
-  p{font-size:18px}
-  .content-wrap{padding:0 16px 48px}
-  img.story-img{margin:22px 0;border-radius:10px}
-}
-
 </style>
 </head>
 <body>
 
-<div class="sticky-cta" id="sticky-cta">
-  <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-btn">Check Availability Now ❯</a>
+<div class="top-cta-bar">
+  <a href="YOUR_AFFILIATE_LINK_HERE">Check Availability Now ›</a>
 </div>
 
-
 <header class="site-header">
-  <div class="site-header-inner">
-    <a href="/" class="site-logo">The Lived Truth</a>
-    <span class="advertorial-label">Advertorial</span>
-  </div>
+  <a href="/" class="site-logo">The Lived Truth</a>
+  <span class="advertorial-label">Advertorial</span>
 </header>
 
 <main class="content-wrap">
@@ -174,12 +137,14 @@ img.story-img{border-radius:10px;margin:28px 0;box-shadow:none;border:1px solid 
     <div class="author-meta">
       <div class="author-name">David Thornton</div>
       <div class="author-detail">Founder, SnoreStop · California</div>
+      <div class="author-detail">April 2026 · 5 min read</div>
     </div>
   </div>
   <span class="verified-badge">✓ Verified</span>
 </div>
 
-<img src="outputs/kie/2026-04-30/snorestop-adv15-promt15-rerender/20260430-121604_01_attach-snorestop-product-image-before-generating_2.webp" alt="Story image 1" class="story-img" loading="lazy">
+<div class="img-placeholder">NANO BANANA PRO — 1280×720px
+Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no frame, fills entire frame edge to edge. A man in his late 50s with grey hair sitting at a wooden desk in a small office, sleeves rolled up, hands clasped together resting on the desk in front of him, looking directly at the camera with a calm, slightly tired but confident expression. A SnoreStop (File 1) bottle visible on the corner of the desk. Behind him, slightly out of focus, a wall of small framed handwritten thank-you notes from customers, each one different. Soft natural daylight from a window to the left. iPhone 15 Pro natural indoor light, slight depth of field, natural grain, authentic and unposed. Real, not staged, not styled, not a stock photo.</div>
 
 <p>I am going to make you an offer that no one in our category has ever made.</p>
 
@@ -238,7 +203,8 @@ img.story-img{border-radius:10px;margin:28px 0;box-shadow:none;border:1px solid 
   </div>
 </div>
 
-<img src="outputs/kie/2026-04-30/snorestop-adv15-promt15-rerender/20260430-121603_02_attach-snorestop-product-image-before-generating_2.webp" alt="Story image 2" class="story-img" loading="lazy">
+<div class="img-placeholder">NANO BANANA PRO — 1280×720px
+Ultra realistic iPhone 15 Pro rear camera photo, no timestamp, no watermark, no frame, fills entire frame edge to edge. A small SnoreStop (File 1) oral spray bottle resting on a wooden bedside table next to a folded pair of reading glasses, a hardcover book with a bookmark sticking out, and a glass of water. Soft bedside lamp light coming from the right. Bed visible slightly out of focus in the background. iPhone 15 Pro natural warm indoor light, natural grain, shallow depth of field, intimate domestic feel. Real, not staged, not styled, not a stock photo.</div>
 
 <h2>How To Take Advantage Of It</h2>
 
@@ -321,19 +287,6 @@ img.story-img{border-radius:10px;margin:28px 0;box-shadow:none;border:1px solid 
   <p><a href="#">Privacy Policy</a> · <a href="#">Terms</a> · <a href="#">Disclaimer</a></p>
   <p>© 2026 thelivedtruth.org · Individual results may vary.</p>
 </footer>
-
-
-<script>
-  const stickyCta = document.getElementById('sticky-cta');
-  function updateStickyCta() {
-    const scrollTop = window.scrollY || window.pageYOffset;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-    stickyCta.classList.toggle('show', pct >= 65);
-  }
-  window.addEventListener('scroll', updateStickyCta, { passive: true });
-  window.addEventListener('load', updateStickyCta);
-</script>
 
 </body>
 </html>
