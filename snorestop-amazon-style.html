@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnoreStop - Amazon Style Product Page | The Lived Truth</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #eaeded;
+      color: #0f1111;
+      line-height: 1.45;
+    }
+    .topbar {
+      background: #131921;
+      color: #fff;
+      padding: 12px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .topbar .brand {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: .01em;
+    }
+    .topbar .brand span { color: #febd69; }
+    .topbar .tagline {
+      font-size: 13px;
+      color: #d6d6d6;
+    }
+    .subbar {
+      background: #232f3e;
+      color: #fff;
+      padding: 8px 18px;
+      font-size: 13px;
+    }
+    .wrap {
+      max-width: 1500px;
+      margin: 16px auto;
+      padding: 0 16px 40px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: 90px 1.2fr 1fr 320px;
+      gap: 16px;
+      align-items: start;
+    }
+    .panel {
+      background: #fff;
+      border: 1px solid #d5d9d9;
+      border-radius: 8px;
+    }
+    .thumbs {
+      padding: 10px;
+      display: grid;
+      gap: 10px;
+    }
+    .thumb {
+      border: 1px solid #d5d9d9;
+      border-radius: 6px;
+      padding: 4px;
+      background: #fff;
+    }
+    .thumb img {
+      width: 100%;
+      display: block;
+      border-radius: 4px;
+    }
+    .hero {
+      padding: 14px;
+      position: sticky;
+      top: 16px;
+    }
+    .hero img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+    .main {
+      padding: 14px 16px;
+    }
+    .title {
+      font-size: 27px;
+      line-height: 1.2;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    .byline {
+      color: #007185;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .rating-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .stars { color: #f69931; letter-spacing: .04em; }
+    .link { color: #007185; text-decoration: none; }
+    .link:hover { color: #c7511f; text-decoration: underline; }
+    .divider {
+      border: none;
+      border-top: 1px solid #e7e7e7;
+      margin: 12px 0;
+    }
+    .price-line {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .price {
+      color: #b12704;
+      font-size: 30px;
+      line-height: 1;
+      margin-right: 6px;
+    }
+    .strike {
+      color: #565959;
+      text-decoration: line-through;
+    }
+    .coupon {
+      display: inline-block;
+      background: #7fda69;
+      color: #0f1111;
+      font-size: 12px;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      margin: 8px 0 10px;
+    }
+    .bullets h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .bullets ul {
+      margin-left: 20px;
+      font-size: 15px;
+    }
+    .bullets li { margin-bottom: 8px; }
+    .buybox {
+      padding: 14px;
+      position: sticky;
+      top: 16px;
+    }
+    .buy-price {
+      color: #b12704;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .stock {
+      color: #007600;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .ship {
+      font-size: 14px;
+      margin-bottom: 12px;
+      color: #222;
+    }
+    .qty {
+      width: 100%;
+      border: 1px solid #d5d9d9;
+      background: #f0f2f2;
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .btn {
+      width: 100%;
+      border: 1px solid #fcd200;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-bottom: 8px;
+    }
+    .btn-cart { background: #ffd814; }
+    .btn-buy { background: #ffa41c; border-color: #ff8f00; }
+    .secure {
+      font-size: 12px;
+      color: #565959;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+    .section {
+      margin-top: 18px;
+      padding: 16px;
+    }
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    .a-plus {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .card {
+      border: 1px solid #d5d9d9;
+      border-radius: 8px;
+      padding: 14px;
+      background: #fff;
+    }
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 18px;
+    }
+    .rating-box {
+      border: 1px solid #d5d9d9;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .rating-big {
+      font-size: 34px;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 44px 1fr 40px;
+      align-items: center;
+      gap: 8px;
+      margin: 6px 0;
+      font-size: 13px;
+    }
+    .bar {
+      background: #f0f2f2;
+      border: 1px solid #d5d9d9;
+      border-radius: 999px;
+      height: 14px;
+      overflow: hidden;
+    }
+    .bar > span {
+      display: block;
+      height: 100%;
+      background: #ffa41c;
+    }
+    .review-item {
+      border-top: 1px solid #e7e7e7;
+      padding: 14px 0;
+    }
+    .review-item:first-child { border-top: none; }
+    .review-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    .review-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .review-meta {
+      font-size: 13px;
+      color: #565959;
+      margin-bottom: 8px;
+    }
+    .review-text {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    @media (max-width: 1200px) {
+      .product-grid { grid-template-columns: 80px 1fr 320px; }
+      .main { grid-column: span 1; }
+      .hero { display: none; }
+    }
+    @media (max-width: 900px) {
+      .product-grid { grid-template-columns: 1fr; }
+      .thumbs { display: none; }
+      .hero { display: block; position: static; }
+      .buybox { position: static; }
+      .a-plus, .reviews-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">thelivedtruth<span>.shop</span></div>
+    <div class="tagline">SnoreStop Special Product Listing</div>
+  </header>
+  <div class="subbar">Health & Household  >  Sleep Support  >  Snoring Relief</div>
+
+  <main class="wrap">
+    <section class="product-grid">
+      <aside class="panel thumbs">
+        <div class="thumb"><img src="outputs/kie/2026-04-29/snorestop-adv6/20260429-015911_01_ultra-realistic-iphone-15-pro-rear-camera-photo_1.webp" alt="Thumb 1"></div>
+        <div class="thumb"><img src="outputs/kie/2026-04-29/snorestop-adv14/20260429-213427_02_ultra-realistic-iphone-15-pro-rear-camera-photo_1.webp" alt="Thumb 2"></div>
+        <div class="thumb"><img src="outputs/kie/2026-04-30/snorestop-adv17-rerender/20260430-114224_01_ultra-realistic-iphone-15-pro-rear-camera-photo_1.webp" alt="Thumb 3"></div>
+        <div class="thumb"><img src="outputs/kie/2026-04-29/snorestop-adv18/20260429-223723_02_ultra-realistic-iphone-15-pro-rear-camera-photo_1.webp" alt="Thumb 4"></div>
+      </aside>
+
+      <div class="panel hero">
+        <img src="outputs/kie/2026-04-29/snorestop-adv6/20260429-015911_01_ultra-realistic-iphone-15-pro-rear-camera-photo_1.webp" alt="SnoreStop Hero">
+      </div>
+
+      <section class="panel main">
+        <h1 class="title">SnoreStop Night Spray - Root-Cause Focused Snoring Support, 30-Night Trial System, Non-Device Routine</h1>
+        <div class="byline">Visit the <a class="link" href="#">SnoreStop Store</a></div>
+        <div class="rating-row">
+          <span class="stars">★★★★★</span>
+          <a class="link" href="#">4.6</a>
+          <span>|</span>
+          <a class="link" href="#">2,948 ratings</a>
+          <span>|</span>
+          <a class="link" href="#">431 answered questions</a>
+        </div>
+        <hr class="divider">
+
+        <div class="price-line">
+          <span class="price">$39.95</span>
+          <span>($39.95 / bottle)</span>
+        </div>
+        <div class="price-line">
+          List Price: <span class="strike">$69.95</span> &nbsp; <strong>Save 43%</strong>
+        </div>
+        <div class="coupon">Extra 10% off at checkout</div>
+
+        <div class="bullets">
+          <h3>About this item</h3>
+          <ul>
+            <li>Designed for a simple nightly protocol: low-friction use before bed.</li>
+            <li>Used by customers who previously tried strips, mouthguards, and complex devices.</li>
+            <li>Focuses on consistency and routine adherence over equipment-heavy workflows.</li>
+            <li>Supports a 30-night evaluation window with money-back guarantee terms.</li>
+            <li>Pair-friendly option for households impacted by chronic snoring patterns.</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside class="panel buybox">
+        <div class="buy-price">$39.95</div>
+        <div class="ship">FREE delivery by <strong>Tuesday</strong> for eligible orders.</div>
+        <div class="stock">In Stock.</div>
+        <select class="qty" aria-label="Quantity">
+          <option>Qty: 1</option>
+          <option>Qty: 2</option>
+          <option>Qty: 3</option>
+          <option>Qty: 4</option>
+        </select>
+        <button class="btn btn-cart">Add to Cart</button>
+        <button class="btn btn-buy">Buy Now</button>
+        <div class="secure">Secure transaction<br>Sold by The Lived Truth Partner Store<br>Ships from Official Distributor</div>
+      </aside>
+    </section>
+
+    <section class="panel section">
+      <h2>Product Description</h2>
+      <p>SnoreStop is positioned as a nightly snoring support routine for people who want a low-friction alternative to hardware-heavy approaches. This listing emphasizes practical consistency, straightforward use, and a clear 30-night decision framework.</p>
+      <p>Customers commonly mention easier adherence compared to previous methods that required fittings, equipment setup, or disruptive bedtime changes.</p>
+    </section>
+
+    <section class="panel section">
+      <h2>Enhanced Content</h2>
+      <div class="a-plus">
+        <article class="card">
+          <h3>Why this format works</h3>
+          <p>The biggest predictor of success in these listings is not complexity. It is whether users can follow the protocol every night for long enough to judge trend.</p>
+        </article>
+        <article class="card">
+          <h3>30-night evaluation mindset</h3>
+          <p>Rather than expecting one-night perfection, evaluate direction across a full month. This produces clearer decisions and fewer false negatives.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel section">
+      <h2>Customer Reviews</h2>
+      <div class="reviews-grid">
+        <aside class="rating-box">
+          <div class="rating-big">4.6 out of 5</div>
+          <div class="stars">★★★★★</div>
+          <p style="font-size:13px;color:#565959;margin-top:6px;">2,948 global ratings</p>
+          <div class="bar-row"><span>5 star</span><div class="bar"><span style="width:72%"></span></div><span>72%</span></div>
+          <div class="bar-row"><span>4 star</span><div class="bar"><span style="width:17%"></span></div><span>17%</span></div>
+          <div class="bar-row"><span>3 star</span><div class="bar"><span style="width:6%"></span></div><span>6%</span></div>
+          <div class="bar-row"><span>2 star</span><div class="bar"><span style="width:3%"></span></div><span>3%</span></div>
+          <div class="bar-row"><span>1 star</span><div class="bar"><span style="width:2%"></span></div><span>2%</span></div>
+        </aside>
+
+        <div>
+          <article class="review-item">
+            <div class="review-head"><span class="stars">★★★★★</span> <span>Verified Purchase</span></div>
+            <div class="review-title">Finally a routine we could stick to</div>
+            <div class="review-meta">Reviewed in the United States on April 29, 2026</div>
+            <p class="review-text">We had already tried strips and two mouthguard types. This was the first approach that felt easy enough to do nightly. Not magic on night one, but clear improvement by week two.</p>
+          </article>
+          <article class="review-item">
+            <div class="review-head"><span class="stars">★★★★★</span> <span>Verified Purchase</span></div>
+            <div class="review-title">Less friction than device options</div>
+            <div class="review-meta">Reviewed in the United States on April 22, 2026</div>
+            <p class="review-text">The main difference for us was adherence. We stopped quitting after a few nights because this did not require complicated setup.</p>
+          </article>
+          <article class="review-item">
+            <div class="review-head"><span class="stars">★★★★☆</span> <span>Verified Purchase</span></div>
+            <div class="review-title">Good trend, not instant for us</div>
+            <div class="review-meta">Reviewed in the United States on April 19, 2026</div>
+            <p class="review-text">By day 10 the snoring volume was visibly lower. Sharing this because realistic expectations helped us stay consistent.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
