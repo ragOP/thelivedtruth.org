@@ -81,7 +81,7 @@ p strong{font-weight:700;color:var(--body)}
 .review-author{font-size:14px;color:var(--muted);font-weight:600}
 
 .cta-wrap{margin:36px 0 24px}
-.cta-btn{display:block;background:var(--green);color:#fff;text-decoration:none;padding:22px 24px;border-radius:10px;font-size:22px;font-weight:700;text-align:center;box-shadow:0 4px 12px rgba(22,163,74,.28);line-height:1.2}
+.cta-btn{display:block;background:var(--green);color:#fff;text-decoration:none;padding:22px 24px;border-radius:10px;font-size:22px;font-weight:700;white-space:nowrap;text-align:center;box-shadow:0 4px 12px rgba(22,163,74,.28);line-height:1.2}
 .cta-btn:hover{background:var(--green-dark)}
 .trust-signals{font-size:12.6px;color:#8a8f98;text-align:center;margin-top:14px;line-height:1.6}
 
@@ -140,14 +140,14 @@ img.story-img{border-radius:10px;margin:28px 0;box-shadow:none;border:1px solid 
 .author-top{display:flex;align-items:center;gap:14px;min-width:0;flex:1}
 .verified-badge{display:inline-flex;align-items:center;gap:6px;font-size:13px;background:var(--verified-bg);color:var(--verified-text);padding:6px 14px;border-radius:20px;font-weight:600;white-space:nowrap;flex-shrink:0;margin-top:0}
 .cta-wrap{text-align:center;margin:32px 0}
-.cta-btn{display:block;width:100%;background:#149312;color:#fff;font-size:24.2px;font-weight:700;text-align:center;text-decoration:none;padding:19px 28px;border-radius:6px;border:none;cursor:pointer;transition:background .2s,transform .1s;letter-spacing:.01em;line-height:1.3;position:relative;overflow:hidden;isolation:isolate;box-shadow:none}
+.cta-btn{display:block;width:100%;background:#149312;color:#fff;font-size:clamp(20px,5.6vw,24.2px);font-weight:700;white-space:nowrap;text-align:center;text-decoration:none;padding:19px 28px;border-radius:6px;border:none;cursor:pointer;transition:background .2s,transform .1s;letter-spacing:.01em;line-height:1.3;position:relative;overflow:hidden;isolation:isolate;box-shadow:none}
 .cta-btn::before{content:"";position:absolute;top:0;left:-75%;width:42%;height:100%;background:linear-gradient(110deg,rgba(255,255,255,0),rgba(255,255,255,.35),rgba(255,255,255,0));transform:skewX(-20deg);animation:cta-shimmer 4.4s ease-in-out infinite;pointer-events:none}
 .cta-btn:hover{background:#149312}
 .cta-btn:active{transform:scale(.99)}
 @keyframes cta-shimmer{0%,80%{left:-75%}100%{left:130%}}
 .sticky-cta{position:fixed;bottom:14px;left:0;right:0;padding:0 16px;background:transparent;border-top:none;z-index:9999;transform:translateY(140%);transition:transform .35s cubic-bezier(.4,0,.2,1);pointer-events:none;text-align:center}
 .sticky-cta.show{transform:translateY(0)}
-.sticky-cta .cta-btn{width:100%;max-width:680px;margin:0 auto;display:block;font-size:24.2px;padding:19px 28px;border-radius:6px;box-shadow:0 10px 28px rgba(0,0,0,.2);pointer-events:auto}
+.sticky-cta .cta-btn{width:100%;max-width:680px;margin:0 auto;display:block;font-size:clamp(20px,5.6vw,24.2px);padding:19px 28px;border-radius:6px;box-shadow:0 10px 28px rgba(0,0,0,.2);pointer-events:auto}
 .site-footer{padding:28px 20px 40px}
 @media(max-width:680px){
   .author-row{flex-wrap:nowrap;align-items:center}
@@ -165,7 +165,7 @@ img.story-img{border-radius:10px;margin:28px 0;box-shadow:none;border:1px solid 
 <body>
 
 <div class="sticky-cta" id="sticky-cta">
-  <a href="https://trk.connectbenefit.online/click" class="cta-btn">Try SnoreStop Risk-Free ›</a>
+  <a href="https://trk.connectbenefit.online/click" class="cta-btn">Try SnoreStop Risk-Free&nbsp;›</a>
 </div>
 
 
@@ -274,7 +274,7 @@ img.story-img{border-radius:10px;margin:28px 0;box-shadow:none;border:1px solid 
 <p>Your turn. Order through the manufacturer's official site below.</p>
 
 <div class="cta-wrap">
-  <a href="https://trk.connectbenefit.online/click" class="cta-btn">Try SnoreStop Risk-Free ›</a>
+  <a href="https://trk.connectbenefit.online/click" class="cta-btn">Try SnoreStop Risk-Free&nbsp;›</a>
   <div class="trust-signals">Natural formula · No prescription needed · 30-day money back guarantee · Under $50.</div>
 </div>
 
